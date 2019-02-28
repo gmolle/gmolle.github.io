@@ -3,7 +3,9 @@ const button1 = document.querySelector('.section1');
 const button2 = document.querySelector('.section2');
 const button3 = document.querySelector('.backTo1');
 const project1 = document.querySelector('.toDoList');
-const modal1 = document.querySelector('.toDoList');
+const project2 = document.querySelector('.toDoList2');
+const project3 = document.querySelector('.toDoList3');
+const project4 = document.querySelector('.toDoList4');
 const modalBG = document.querySelector('.bg-modal');
 const close = document.querySelector('.close');
 //////////////////////////////////////////
@@ -40,9 +42,22 @@ project1.addEventListener ('mouseout', () => {
 });
 
 // Modal Open & Close
-modal1.addEventListener('click', () => {
+project1.addEventListener('click', () => {
 	modalBG.style.display = 'flex';
 });
+
+project2.addEventListener('click', () => {
+	modalBG.style.display = 'flex';
+});
+
+project3.addEventListener('click', () => {
+	modalBG.style.display = 'flex';
+});
+
+project4.addEventListener('click', () => {
+	modalBG.style.display = 'flex';
+});
+
 
 close.addEventListener('click', () => {
 	modalBG.style.display = 'none';

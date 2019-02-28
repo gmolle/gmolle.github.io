@@ -240,7 +240,7 @@ i:hover {
 }
 
 header {
-  background-image: url("https://gmolle.github.io/Images/Nature4.jpg");
+  background-image: url("../images/Nature4.jpg");
   height: 1000px;
   width: auto;
 }
@@ -299,12 +299,18 @@ img {
   flex-grow: 1;
 }
 
-.toDoList {
+.toDoList,
+.toDoList2,
+.toDoList3,
+.toDoList4 {
   height: 300px;
   border-radius: 0.5em;
 }
 
-.toDoList:hover {
+.toDoList:hover,
+.toDoList2:hover,
+.toDoList3:hover,
+.toDoList4:hover {
   cursor: pointer;
   border-radius: 0.5em;
   box-shadow: 0 2px 10px rgba(0,0,0,.9);
@@ -345,9 +351,10 @@ img {
   color: #333;
   cursor: pointer;
   margin-bottom: 1000px;
-  &:hover {
-    color: #666;
-  }
+}
+
+.close:hover {
+  color: #666;
 }
 
 .toDoListModal {
