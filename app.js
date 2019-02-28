@@ -16,6 +16,10 @@ window.onkeydown = function(event) {
         modalBG.style.display = 'none';
     }
 };
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
 //////////////////////////////////////////
 
 // Event Listeners
@@ -42,33 +46,33 @@ project1.addEventListener ('mouseout', () => {
 });
 
 project2.addEventListener ('mouseover', () => {
-	project1.style.transform = 'scale(1.02)';
-	project1.style.transition = '.5s';
+	project2.style.transform = 'scale(1.02)';
+	project2.style.transition = '.5s';
 });
 
 project2.addEventListener ('mouseout', () => {
-	project1.style.transform = 'scale(1)';
-	project1.style.transition = '.5s';
+	project2.style.transform = 'scale(1)';
+	project2.style.transition = '.5s';
 });
 
 project3.addEventListener ('mouseover', () => {
-	project1.style.transform = 'scale(1.02)';
-	project1.style.transition = '.5s';
+	project3.style.transform = 'scale(1.02)';
+	project3.style.transition = '.5s';
 });
 
 project3.addEventListener ('mouseout', () => {
-	project1.style.transform = 'scale(1)';
-	project1.style.transition = '.5s';
+	project3.style.transform = 'scale(1)';
+	project3.style.transition = '.5s';
 });
 
 project4.addEventListener ('mouseover', () => {
-	project1.style.transform = 'scale(1.02)';
-	project1.style.transition = '.5s';
+	project4.style.transform = 'scale(1.02)';
+	project4.style.transition = '.5s';
 });
 
 project4.addEventListener ('mouseout', () => {
-	project1.style.transform = 'scale(1)';
-	project1.style.transition = '.5s';
+	project4.style.transform = 'scale(1)';
+	project4.style.transition = '.5s';
 });
 
 // Modal Open & Close
