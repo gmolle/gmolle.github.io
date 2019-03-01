@@ -240,7 +240,7 @@ i:hover {
 }
 
 header {
-  background-image: url("https://gmolle.github.io/Images/Nature4.jpg");
+  background-image: url("../images/Nature4.jpg");
   height: 1000px;
   width: auto;
 }
@@ -333,20 +333,21 @@ img {
 }
 
 .modal-contents {
-  height: 500px;
-  width: 800px;
+  height: 620px;
+  width: 750px;
   background-color: white;
   text-align: center;
   padding: 20px;
   position: relative;
   border-radius: 4px;
-  display: flex;
+  /*display: flex;*/
+  /*margin: 0 auto;*/
 }
 
 .close {
   position: absolute;
   top: 0;
-  right: 2px;
+  right: 5px;
   font-size: 25px;
   color: #333;
   cursor: pointer;
@@ -360,4 +361,14 @@ img {
 .toDoListModal {
   width: 700px;
   border-radius: 0.5em;
+  display: block;
+  margin: 0 auto;
+}
+
+.modalP {
+  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+  font-family: 'Raleway', sans-serif;
 }
