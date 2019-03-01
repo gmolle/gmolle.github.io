@@ -240,7 +240,7 @@ i:hover {
 }
 
 header {
-  background-image: url("../Images/Nature4.jpg");
+  background-image: url("../images/Nature4.jpg");
   height: 1000px;
   width: auto;
 }
@@ -344,18 +344,18 @@ img {
   /*margin: 0 auto;*/
 }
 
-.close {
+.close i{
   position: absolute;
   top: 0;
   right: 5px;
   font-size: 25px;
-  color: #333;
+  color: lightgrey;
   cursor: pointer;
   margin-bottom: 1000px;
 }
 
-.close:hover {
-  color: #666;
+.close i:hover {
+  color: grey;
 }
 
 .toDoListModal {
