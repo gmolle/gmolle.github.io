@@ -68,6 +68,7 @@ div.main-content {
   top: 735px;
   position: relative;
   font-size: 75px;
+  line-height: .5px;
 }
 
 .section2 {
@@ -80,10 +81,11 @@ div.main-content {
 
 .backTo1 {
   grid-row: 1;
-  height: 25px;
   justify-self: center;
   align-self: center;
   font-size: 75px;
+  position: relative;
+  bottom: 15px;
 }
 
 .headSection {
@@ -96,7 +98,7 @@ div.main-content {
 }
 
 .right-line {
-  top: 700px;
+  top: 685px;
   position: relative;
   width: 200px;
   left: 150px;
@@ -109,7 +111,7 @@ div.main-content {
 }
 
 .left-line {
-  top: 690px;
+  top: 675px;
   position: relative;
   width: 200px;
   right: 150px;
@@ -240,7 +242,7 @@ i:hover {
 }
 
 header {
-  background-image: url("../Images/Nature4.jpg");
+  background-image: url("../images/Nature4.jpg");
   height: 1000px;
   width: auto;
 }
