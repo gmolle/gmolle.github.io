@@ -11,11 +11,21 @@ const close = document.querySelector('.close');
 //////////////////////////////////////////
 
 // Functions
+
+// Closes modal when you hit ESC
 window.onkeydown = function(event) {
     if (event.keyCode == 27) {
         modalBG.style.display = 'none';
     }
 };
+
+
+// Closes modal when you click the modal background
+window.onclick = function(e) {
+	if (e.target == modalBG) {
+		modalBG.style.display = 'none';
+	}
+}
 
 
 //////////////////////////////////////////
@@ -95,9 +105,7 @@ close.addEventListener('click', () => {
 	modalBG.style.display = 'none';
 });
 
-modalBG.addEventListener('click', () => {
-	modalBG.style.display = 'none';
-});
+
 //////////////////////////////////////////
 
 
