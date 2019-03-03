@@ -107,6 +107,8 @@ div.main-content {
 .headSection {
   justify-content: center;
   align-items: center;
+  animation: 2.5s fadeIn;
+  animation-fill-mode: forwards;
 }
 
 .card-buttons {
@@ -124,8 +126,6 @@ div.main-content {
   height:1px;
   background:white;
   background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(#000));
-  animation: 2.5s fadeIn;
-  animation-fill-mode: forwards;
 }
 
 .left-line {
@@ -139,14 +139,11 @@ div.main-content {
   height:1px;
   background:white;
   background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(#000));
-  animation: 2.5s fadeIn;
-  animation-fill-mode: forwards;
 }
 
 .socialMedia {
   position: relative;
   top: 550px;
-  animation: 2.5s fadeIn;
   animation: 2.5s spin;
   animation-fill-mode: forwards;
 }
@@ -314,7 +311,6 @@ h4 {
   font-family: 'Roboto', serif;
   text-align: center;
   letter-spacing: 2px;
-  animation: 2.5s fadeIn;
   animation: 2.5s spin;
   animation-fill-mode: forwards;
 }
@@ -327,7 +323,6 @@ h4 {
   font-family: 'Roboto', serif;
   color: white;
   letter-spacing: 2px;
-  animation: 2.5s fadeIn;
   animation: 2.5s spin;
   animation-fill-mode: forwards;
 }
