@@ -62,6 +62,20 @@ div.main-content {
 
 .prog {
   grid-row: 3;
+  grid-column: 1;
+  display: flex;
+  margin: 0 auto;
+}
+
+.skillTitle {
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.skillTitleDiv {
+  display: flex;
+  grid-row: 2;
+  grid-column: 1;
 }
 
 .section1 {
@@ -69,6 +83,8 @@ div.main-content {
   position: relative;
   font-size: 75px;
   line-height: .5px;
+  animation: 2.5s fadeIn;
+  animation-fill-mode: forwards;
 }
 
 .section2 {
@@ -108,6 +124,8 @@ div.main-content {
   height:1px;
   background:white;
   background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(#000));
+  animation: 2.5s fadeIn;
+  animation-fill-mode: forwards;
 }
 
 .left-line {
@@ -121,11 +139,16 @@ div.main-content {
   height:1px;
   background:white;
   background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(#000));
+  animation: 2.5s fadeIn;
+  animation-fill-mode: forwards;
 }
 
 .socialMedia {
   position: relative;
   top: 550px;
+  animation: 2.5s fadeIn;
+  animation: 2.5s spin;
+  animation-fill-mode: forwards;
 }
 
 
@@ -150,6 +173,7 @@ body {
 
 html{
   scroll-behavior: smooth;
+  margin: 0;
 }
 
 a {
@@ -250,6 +274,8 @@ header {
 .skills {
   height: 1000px;
   background-color: #C3E7FF;
+ /* -webkit-transition: all .3s linear 0s;
+  transition: all .3s linear 0s;*/
 }
 
 .progList {
@@ -257,6 +283,8 @@ header {
   padding-left: 0;
   display: inline-block;
   margin-right: 25px;
+  font-family: 'Verdana', serif;
+  justify-content: center;
 }
 
 .progList2 {
@@ -264,6 +292,7 @@ header {
   padding-left: 0;
   display: inline-block;
   margin-left: 25px;
+  font-family: 'Verdana', serif;
 }
 
 h3 {
@@ -285,6 +314,9 @@ h4 {
   font-family: 'Roboto', serif;
   text-align: center;
   letter-spacing: 2px;
+  animation: 2.5s fadeIn;
+  animation: 2.5s spin;
+  animation-fill-mode: forwards;
 }
 
 .bio {
@@ -295,6 +327,9 @@ h4 {
   font-family: 'Roboto', serif;
   color: white;
   letter-spacing: 2px;
+  animation: 2.5s fadeIn;
+  animation: 2.5s spin;
+  animation-fill-mode: forwards;
 }
 
 img {
@@ -373,4 +408,36 @@ img {
   align-items: center;
   margin: auto 0;
   font-family: 'Raleway', sans-serif;
+}
+
+.none {
+  display: none;
+  -webkit-transition: all .3s linear 0s;
+  transition: all .3s linear 0s;
+}
+
+
+/* ===================================== 
+   Animations
+======================================== */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    /*transform: rotate(180deg);*/
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    /*transform: rotate(360deg);*/
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
