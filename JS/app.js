@@ -5,6 +5,10 @@ const button3 = document.querySelector('.backTo1');
 const modalBG = document.querySelector('.bg-modal');
 const close = document.querySelector('.close');
 const projects = document.querySelectorAll('.toDoList');
+const skills = document.querySelector('.skills');
+const main = document.querySelector('.main-content');
+const backTo1 = document.querySelector('.backTo1Div')
+const projectHeader = document.querySelector('.projectHeader');
 //////////////////////////////////////////
 
 // Functions
@@ -23,6 +27,7 @@ window.onclick = function(e) {
 		modalBG.style.display = 'none';
 	}
 }
+
 
 
 //////////////////////////////////////////
@@ -65,5 +70,3 @@ close.addEventListener('click', () => {
 	modalBG.style.display = 'none';
 });
 //////////////////////////////////////////
-
-

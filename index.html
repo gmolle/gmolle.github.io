@@ -8,6 +8,7 @@
     <link href="CSS/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="icon" type="image/gif" href = "Images/File-32.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
 
@@ -28,31 +29,34 @@
     </header>
 
     <div class="skills">
-      <div class="skillTitleDiv">
+      <div class="skillTitleDiv" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
         <h3 class="skillTitle">Skills</h3>
       </div>
       <div class="prog">
         <ul class="progList">
-          <li><h4>Front-End</h4></li>
-          <li>HTML5</li>
-          <li>CSS3</li>
-	  <li>JavaScript</li>
+          <li data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="200"><h4>Front-End</h4></li>
+          <li data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="300">HTML5</li>
+          <li data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="400">CSS3</li>
+          <li data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="500">JavaScript</li>
         </ul>
 
         <ul class="progList2">
-         <li><h4>Libraries & <br/>Frameworks</h4></li>
-          <li>React</li>
+          <li data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="200"><h4>Libraries & <br/>Frameworks</h4></li>
+          <li data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="300">React</li>
         </ul>
       </div>
-      <i class="fas fa-angle-double-down section2"></i>
+      <i class="fas fa-angle-double-down section2" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"></i>
        
     </div>
 
 
+    <div class="projectHeader" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500">
+      <h2>Projects</h2>
+    </div> 
+    <div class="main-content">
 
-    <h2>Projects</h2> 
-    <div class="main-content">    
-      <div class="card">
+
+      <div class="card" data-aos="fade-down-right" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="200">
     
         <h1>To-Do List</h1>
         
@@ -64,11 +68,11 @@
         </div>
       </div>
       
-     <div class="card">
+     <div class="card" data-aos="fade-down-left" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="200">
     
         <h1>To-Do List</h1>
         
-        <img src="Images/todolist2.gif" class="toDoList2">
+        <img src="Images/todolist2.gif" class="toDoList">
         
         <div class="card-buttons">
           <a class="btn" href="#" target="_blank">Demo</a>
@@ -76,11 +80,11 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" data-aos="fade-up-right" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="200">
     
         <h1>To-Do List</h1>
         
-        <img src="Images/todolist2.gif" class="toDoList3">
+        <img src="images/todolist2.gif" class="toDoList">
         
         <div class="card-buttons">
           <a class="btn" href="#" target="blank">Demo</a>
@@ -88,22 +92,24 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" data-aos="fade-up-left" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="200">
     
         <h1>To-Do List</h1>
         
-        <img src="Images/todolist2.gif" class="toDoList4">
+        <img src="Images/todolist2.gif" class="toDoList">
         
         <div class="card-buttons">
           <a class="btn" href="#">Demo</a>
           <a class="btn" href="#">Code</a>
         </div>
       </div>
-      
-
     </div>
+    <div class="backTo1Div">
+        <i class="fas fa-angle-double-up backTo1"></i>
+    </div>
+  
 
-    <i class="fas fa-angle-double-up backTo1"></i>
+    
 
     <!-- MODAL'S -->
 
@@ -118,33 +124,15 @@
     </div>
 
   </body>
-   <footer>
+   <!--  <footer>
         
 
-    </footer>  
+    </footer>   -->
 
-    <script type="text/javascript" src="JS/app.js"></script>
+  <script type="text/javascript" src="JS/app.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script type="text/javascript">
+    AOS.init();
+  </script>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
