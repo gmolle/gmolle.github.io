@@ -74,7 +74,9 @@ div.main-content {
 
 .myBio {
   margin: 0 auto;
-  width: 500px;
+  max-width: 500px;
+  max-height: 300px;
+  overflow-y: auto;
 }
 
 .skillTitle {
@@ -180,12 +182,14 @@ body {
   text-align: center;
   margin: 0;
   background-color: #aad2ed;
+  overflow-x: hidden;
 }
 
 
 html{
   scroll-behavior: smooth;
   margin: 0;
+  overflow-x: hidden;
 }
 
 a {
@@ -284,11 +288,15 @@ i:hover {
 
 header {
   background-image: url("../Images/Nature4.jpg");
-  /*background-repeat: no-repeat;*/
-  /*background-attachment: fixed;*/
-  /*background-size: cover;*/
-  height: 1000px;
-  width: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+  height: 1200px;
+  /*width: 100%;*/
   animation: 2.5s fadeIn;
   animation-fill-mode: forwards;
 }
@@ -433,6 +441,16 @@ img {
 
 .none {
   display: none;
+}
+
+
+/* ===================================== 
+   Media Queries
+======================================== */
+
+@media screen and (max-width: 768px) {
+    
+  }
 }
 
 
