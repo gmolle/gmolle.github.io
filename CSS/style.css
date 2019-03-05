@@ -520,11 +520,6 @@ img {
     .prog {
       grid-row: 3;
     }
-    html,
-    body{
-      overflow-x: hidden;
-      overflow-y: hidden;
-    }
 }
 
 
