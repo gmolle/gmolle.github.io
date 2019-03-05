@@ -36,7 +36,7 @@ button1.addEventListener('click', () => {
 });
 
 button2.addEventListener('click', () => {
-	main.scrollIntoView(true);
+	projectHeader.scrollIntoView(true);
 });
 
 button3.addEventListener('click', () => {
