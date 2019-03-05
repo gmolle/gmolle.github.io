@@ -20,13 +20,13 @@ window.onkeydown = function(event) {
     }
 };
 
+
 // Closes modal when you click the modal background
 window.onclick = function(e) {
 	if (e.target == modalBG) {
 		modalBG.style.display = 'none';
 	}
 }
-
 
 //////////////////////////////////////////
 
