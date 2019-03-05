@@ -34,7 +34,9 @@ window.ontouch = function(e) {
 	}
 }
 
-
+modalBG.addEventListener ('touch', () => {
+	modalBG.style.display = 'none';
+});
 
 
 
