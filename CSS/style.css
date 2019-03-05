@@ -620,7 +620,83 @@ img {
       display: none;
     }
 }
+
+@media (max-width: 800px) and (orientation: landscape) {
+  .skillsDiv {
+    height: 350px;
+  }
+  
+  .skillTitle {
+    margin-top: 0;
+  }
+
+  .myBio {
+    line-height: 95%;
+    overflow: hidden;
+  }
+
+  .about {
+    margin-bottom: 2px;
+    margin-top: auto;
+  }
+
+  .bg-modal {
+      background-color: rgba(0, 0, 0, 0.8);
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      display: none;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-contents {
+      height: 300px;
+      width: 400px;
+      background-color: white;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      border-radius: 4px;
+    }
+
+    .close i{
+      position: absolute;
+      top: 0;
+      right: 5px;
+      font-size: 25px;
+      color: lightgrey;
+      cursor: pointer;
+      margin-bottom: 1000px;
+    }
+
+    .close i:hover {
+      color: grey;
+    }
+
+    .toDoListModal {
+      width: 325px;
+      border-radius: 0.5em;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .modalP {
+      padding-top: 5px;
+      justify-content: center;
+      align-items: center;
+      margin: auto 0;
+      font-family: 'Raleway', sans-serif;
+      line-height: 90%;
+      font-size: 10px;
+    }
+
+    .none {
+      display: none;
+    }
 }
+
 
 
 
