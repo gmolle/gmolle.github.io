@@ -34,11 +34,11 @@ window.onclick = function(e) {
 
 // Event Listeners
 button1.addEventListener('click', () => {
-	window.scrollTo(0, 1000);
+	window.scrollTo(0, 940);
 });
 
 button2.addEventListener('click', () => {
-	window.scrollTo(0, 2000);
+	window.scrollTo(0, 1875);
 });
 
 button3.addEventListener('click', () => {
