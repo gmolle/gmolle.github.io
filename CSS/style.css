@@ -451,7 +451,7 @@ img {
    Media Queries
 ======================================== */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .section1 {
       display: none;
     }
