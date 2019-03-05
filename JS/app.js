@@ -32,11 +32,11 @@ window.onclick = function(e) {
 
 // Event Listeners
 button1.addEventListener('click', () => {
-	window.scrollTo(0, 940);
+	skills.scrollIntoView(true);
 });
 
 button2.addEventListener('click', () => {
-	window.scrollTo(0, 1875);
+	main.scrollIntoView(true);
 });
 
 button3.addEventListener('click', () => {
