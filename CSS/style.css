@@ -451,7 +451,7 @@ img {
    Media Queries
 ======================================== */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .section1 {
       display: none;
     }
@@ -622,7 +622,7 @@ img {
     }
 } */
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .name {
       display: block;
       margin: 0px;
@@ -655,9 +655,9 @@ img {
     .section1 {
       
     }
-}
+} */
 
-@media (orientation:landscape) {
+/* @media (orientation:landscape) {
   .name {
       display: block;
       margin: 0px;
@@ -718,7 +718,7 @@ img {
       padding-top: 2px;
     }
 
-}
+} */
 
 /*@media and(orientation:landscape) and (min-width: 992px) {
   .name {
