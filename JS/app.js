@@ -28,6 +28,14 @@ window.onclick = function(e) {
 	}
 }
 
+window.ontouch = function(e) {
+	if (e.target == modalBG) {
+		modalBG.style.display = 'none';
+	}
+}
+
+
+
 
 
 //////////////////////////////////////////
