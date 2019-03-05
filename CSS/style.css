@@ -524,6 +524,19 @@ img {
     body {
       overflow: hidden;
     }
+    header {
+      background-image: url("../Images/Nature.webp");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      /*background-attachment: fixed; */
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover; 
+      height: 100vh;
+      animation: 2.5s fadeIn;
+      animation-fill-mode: forwards;
+    }
 }
 
 
