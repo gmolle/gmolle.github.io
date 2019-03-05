@@ -294,7 +294,7 @@ header {
   background-image: url("../Images/Nature4.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -453,40 +453,72 @@ img {
 
 @media screen and (max-width: 768px) {
     .section1 {
-      top: 600px;
-      position: relative;
-      font-size: 75px;
-      line-height: .5px;
-      animation: 2.5s fadeIn;
-      animation-fill-mode: forwards;
+      display: none;
     }
     .right-line {
-      top: 560px;
-      position: relative;
-      width: 200px;
-      left: 150px;
-      display:block;
-      border:none;
-      color:white;
-      height:1px;
-      background:white;
-      background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(#000));
-      animation: 2.5s fadeIn;
-      animation-fill-mode: forwards;
+      display: none;
     }
     .left-line {
-      top: 550px;
+      display: none;
+    }
+    .name {
+      display: block;
+      margin: 0px;
+      color: white;
+      top: 200px;
       position: relative;
-      width: 200px;
-      right: 150px;
-      display:block;
-      border:none;
-      color:white;
-      height:1px;
-      background:white;
-      background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(#000));
-      animation: 2.5s fadeIn;
+      font-family: 'Roboto', serif;
+      text-align: center;
+      letter-spacing: 2px;
+      animation: 2.5s spin;
       animation-fill-mode: forwards;
+    }
+    .bio {
+      top: 220px;
+      position: relative;
+      padding: 0;
+      margin: 0;
+      font-family: 'Roboto', serif;
+      color: white;
+      letter-spacing: 2px;
+      animation: 2.5s spin;
+      animation-fill-mode: forwards;
+    }
+    .socialMedia {
+      position: relative;
+      top: 250px;
+      animation: 2.5s spin;
+      animation-fill-mode: forwards;
+    }
+    .section2 {
+      display: none;
+    }
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(280px, 1fr));
+      grid-template-rows: repeat(4, minmax(100px, 1fr));
+      grid-gap: 20px;
+      grid-auto-columns: 0px;
+    }
+    .backTo1 {
+      display: none;
+    }
+    .section1::before,
+    .section2::before,
+    .backTo1::before {
+      display: none;
+    }
+
+    .aboutDiv {
+      grid-row: 1;
+    }
+    .skillTitleDiv {
+      display: flex;
+      grid-row: 2;
+      grid-column: 1;
+    }
+    .prog {
+      grid-row: 3;
     }
 }
 
