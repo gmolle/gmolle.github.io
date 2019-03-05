@@ -451,7 +451,7 @@ img {
    Media Queries
 ======================================== */
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 600px) {
     .section1 {
       display: none;
     }
@@ -590,7 +590,7 @@ img {
       display: none;
     }
 }
-@media screen and (min-width: 800px) {
+/* @media screen and (min-width: 800px) {
   .name {
       display: block;
       margin: 0px;
@@ -620,9 +620,9 @@ img {
       animation: 2.5s spin;
       animation-fill-mode: forwards;
     }
-}
+} */
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 600px) {
   .name {
       display: block;
       margin: 0px;
