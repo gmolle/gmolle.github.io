@@ -451,7 +451,7 @@ img {
    Media Queries
 ======================================== */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .section1 {
       display: none;
     }
@@ -529,7 +529,6 @@ img {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      /*background-attachment: fixed; */
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover; 
@@ -556,8 +555,6 @@ img {
       padding: 20px;
       position: relative;
       border-radius: 4px;
-      /*display: flex;*/
-      /*margin: 0 auto;*/
     }
 
     .close i{
@@ -593,7 +590,199 @@ img {
       display: none;
     }
 }
+@media screen and (min-width: 800px) {
+  .name {
+      display: block;
+      margin: 0px;
+      color: white;
+      top: 300px;
+      position: relative;
+      font-family: 'Roboto', serif;
+      text-align: center;
+      letter-spacing: 2px;
+      animation: 2.5s spin;
+      animation-fill-mode: forwards;
+    }
+    .bio {
+      top: 320px;
+      position: relative;
+      padding: 0;
+      margin: 0;
+      font-family: 'Roboto', serif;
+      color: white;
+      letter-spacing: 2px;
+      animation: 2.5s spin;
+      animation-fill-mode: forwards;
+    }
+    .socialMedia {
+      position: relative;
+      top: 350px;
+      animation: 2.5s spin;
+      animation-fill-mode: forwards;
+    }
+}
 
+@media screen and (max-width: 992px) {
+  .name {
+      display: block;
+      margin: 0px;
+      color: white;
+      top: 400px;
+      position: relative;
+      font-family: 'Roboto', serif;
+      text-align: center;
+      letter-spacing: 2px;
+      animation: 2.5s spin;
+      animation-fill-mode: forwards;
+    }
+    .bio {
+      top: 420px;
+      position: relative;
+      padding: 0;
+      margin: 0;
+      font-family: 'Roboto', serif;
+      color: white;
+      letter-spacing: 2px;
+      animation: 2.5s spin;
+      animation-fill-mode: forwards;
+    }
+    .socialMedia {
+      position: relative;
+      top: 450px;
+      animation: 2.5s spin;
+      animation-fill-mode: forwards;
+    }
+    .section1 {
+      
+    }
+}
+
+@media (orientation:landscape) {
+  .name {
+      display: block;
+      margin: 0px;
+      color: white;
+      top: 100px;
+      position: relative;
+      font-family: 'Roboto', serif;
+      text-align: center;
+      letter-spacing: 2px;
+      animation: 2.5s spin;
+      animation-fill-mode: forwards;
+    }
+    .bio {
+      top: 120px;
+      position: relative;
+      padding: 0;
+      margin: 0;
+      font-family: 'Roboto', serif;
+      color: white;
+      letter-spacing: 2px;
+      animation: 2.5s spin;
+      animation-fill-mode: forwards;
+    }
+    .socialMedia {
+      position: relative;
+      top: 150px;
+      animation: 2.5s spin;
+      animation-fill-mode: forwards;
+    }
+    .about {
+      margin-top: 5px;
+    }
+    .skillTitleDiv {
+      bottom: 30px;
+      position: relative;
+    }
+    .prog {
+      position: relative;
+      bottom: 30px;
+    }
+    .modal-contents {
+      height: 350px;
+      width: 450px;
+      background-color: white;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      border-radius: 4px;
+    }
+    .toDoListModal {
+      width: 350px;
+      border-radius: 0.5em;
+      display: block;
+      margin: 0 auto;
+    }
+    .modalP {
+      font-size: 12px;
+      padding-top: 2px;
+    }
+
+}
+
+/*@media and(orientation:landscape) and (min-width: 992px) {
+  .name {
+      display: block;
+      margin: 0px;
+      color: white;
+      top: 100px;
+      position: relative;
+      font-family: 'Roboto', serif;
+      text-align: center;
+      letter-spacing: 2px;
+      animation: 2.5s spin;
+      animation-fill-mode: forwards;
+    }
+    .bio {
+      top: 120px;
+      position: relative;
+      padding: 0;
+      margin: 0;
+      font-family: 'Roboto', serif;
+      color: white;
+      letter-spacing: 2px;
+      animation: 2.5s spin;
+      animation-fill-mode: forwards;
+    }
+    .socialMedia {
+      position: relative;
+      top: 150px;
+      animation: 2.5s spin;
+      animation-fill-mode: forwards;
+    }
+    .about {
+      margin-top: 5px;
+    }
+    .skillTitleDiv {
+      bottom: 30px;
+      position: relative;
+    }
+    .prog {
+      position: relative;
+      bottom: 30px;
+    }
+    .modal-contents {
+      height: 350px;
+      width: 450px;
+      background-color: white;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      border-radius: 4px;
+    }
+    .toDoListModal {
+      width: 350px;
+      border-radius: 0.5em;
+      display: block;
+      margin: 0 auto;
+    }
+    .modalP {
+      font-size: 12px;
+      padding-top: 2px;
+    }
+
+}
+*/
 
 
 /* ===================================== 
