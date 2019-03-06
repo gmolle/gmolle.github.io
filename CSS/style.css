@@ -532,16 +532,7 @@ img {
 
     header {
       background-image: url("../Images/Nature.jpg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover; 
-      height: 100vh;
-      animation: 2.5s fadeIn;
-      animation-fill-mode: forwards;
+	
     }
 }
 
