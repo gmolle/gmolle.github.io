@@ -264,7 +264,7 @@ i{
 }
 
 i:hover {
-  color: rgba(39, 141, 164, 0.8);
+  color: rgba(39, 141, 164, 0.7);
   cursor: pointer;
 }
 
@@ -528,6 +528,20 @@ img {
 
     .none {
       display: none;
+    }
+
+    header {
+      background-image: url("../Images/Nature4.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover; 
+      height: 100vh;
+      animation: 2.5s fadeIn;
+      animation-fill-mode: forwards;
     }
 }
 

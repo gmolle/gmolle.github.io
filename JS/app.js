@@ -9,6 +9,7 @@ const skills = document.querySelector('.skills');
 const main = document.querySelector('.main-content');
 const backTo1 = document.querySelector('.backTo1Div')
 const projectHeader = document.querySelector('.projectHeader');
+const scrollDown = document.querySelector('.scrollDown');
 //////////////////////////////////////////
 
 // Functions
@@ -56,6 +57,7 @@ for (let i = 0; i < projects.length; i++) {
 		projects[i].style.transition = '.5s';
 	});
 }
+
 
 // Modal Open & Close
 for (let i = 0; i < projects.length; i++) {
