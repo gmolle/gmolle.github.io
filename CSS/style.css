@@ -455,6 +455,10 @@ img {
   margin-bottom: 45px;
 }
 
+.scrollDown {
+  margin-bottom: 3px;
+}
+
 /* ===================================== 
    Media Queries
 ======================================== */
@@ -559,6 +563,12 @@ img {
     }
 
     .backTo1 {
+      display: none;
+    }
+
+    .scrollUp:before,
+    .scrollDown:before,
+    .scrollDown2:before {
       display: none;
     }
 
