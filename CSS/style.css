@@ -368,7 +368,7 @@ img {
 .toDoList4:hover {
   cursor: pointer;
   border-radius: 0.5em;
-  box-shadow: 0 2px 10px rgba(0,0,0,.9);
+  box-shadow: 7px 10px 20px rgba(0,0,0,.9);
 }
 
 
@@ -397,6 +397,8 @@ img {
   border-radius: 4px;
   /*display: flex;*/
   /*margin: 0 auto;*/
+  animation: 1s bouncing;
+  animation-fill-mode: forwards;
 }
 
 .close i{
@@ -749,4 +751,31 @@ img {
   100% {
     transform: rotate(360deg);
   }
+}
+
+@keyframes bouncing {
+    0%, 100% { 
+        top: 0;
+    }
+     50% {
+        top: 25px;
+    }
+}
+
+
+@keyframes fall {
+    from, 15% {
+        transform: rotate(0) translateX(0);
+        opacity: 1;
+        animation-timing-function: cubic-bezier(.07,2.02,.67,.57);
+    }
+    50%, 60% {
+        transform: rotate(90deg) translateX(0);
+        opacity: 1;
+        animation-timing-function: cubic-bezier(.13,.84,.82,1);
+    }
+    85%, to {
+        transform: rotate(90deg) translateX(200px);
+        opacity: 0;
+    }
 }
