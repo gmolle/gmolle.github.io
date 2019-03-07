@@ -436,6 +436,24 @@ img {
   display: none;
 }
 
+.scrollDown,
+.scrollDown2,
+.scrollUp {
+  display: none;
+  margin-top: auto;
+  color: white;
+  font-family: 'Roboto', serif;
+  letter-spacing: 2px;
+  animation: 1s fadeIn;
+  animation-fill-mode: forwards;
+  font-size: 50px;
+}
+
+.scrollDown:hover,
+.scrollDown2:hover,
+.scrollUp:hover{
+  cursor: pointer;
+}
 
 /* ===================================== 
    Media Queries

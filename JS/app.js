@@ -10,6 +10,8 @@ const main = document.querySelector('.main-content');
 const backTo1 = document.querySelector('.backTo1Div')
 const projectHeader = document.querySelector('.projectHeader');
 const scrollDown = document.querySelector('.scrollDown');
+const scrollDown2 = document.querySelector('.scrollDown2');
+const scrollUp = document.querySelector('.scrollUp');
 //////////////////////////////////////////
 
 // Functions
@@ -41,6 +43,48 @@ button2.addEventListener('click', () => {
 });
 
 button3.addEventListener('click', () => {
+	window.scrollTo(0, 0);
+});
+
+button1.addEventListener('mouseover', () => {
+	button1.style.display = 'none';
+	scrollDown.style.display = 'block';
+});
+
+button2.addEventListener('mouseover', () => {
+	button2.style.display = 'none';
+	scrollDown2.style.display = 'block';
+});
+
+button3.addEventListener('mouseover', () => {
+	button3.style.display = 'none';
+	scrollUp.style.display = 'block';
+});
+
+scrollDown.addEventListener('mouseout', () => {
+	button1.style.display = 'block';
+	scrollDown.style.display = 'none';
+});
+
+scrollDown.addEventListener('click', () => {
+	skills.scrollIntoView(true);
+});
+
+scrollDown2.addEventListener('mouseout', () => {
+	button2.style.display = 'block';
+	scrollDown2.style.display = 'none';
+});
+
+scrollDown2.addEventListener('click', () => {
+	projectHeader.scrollIntoView(true);
+});
+
+scrollUp.addEventListener('mouseout', () => {
+	button3.style.display = 'block';
+	scrollUp.style.display = 'none';
+});
+
+scrollUp.addEventListener('click', () => {
 	window.scrollTo(0, 0);
 });
 
