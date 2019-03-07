@@ -58,7 +58,7 @@ button2.addEventListener('mouseover', () => {
 
 button3.addEventListener('mouseover', () => {
 	button3.style.display = 'none';
-	scrollUp.style.display = 'block';
+	scrollUp.style.display = 'inline-block';
 });
 
 scrollDown.addEventListener('mouseout', () => {
@@ -80,7 +80,7 @@ scrollDown2.addEventListener('click', () => {
 });
 
 scrollUp.addEventListener('mouseout', () => {
-	button3.style.display = 'block';
+	button3.style.display = 'inline-block';
 	scrollUp.style.display = 'none';
 });
 

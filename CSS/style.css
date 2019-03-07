@@ -115,11 +115,7 @@ div.main-content {
   position: relative;
 }
 
-.backTo1Div {
-  grid-row: 3;
-  grid-column-start: 1;
-  column-span: all
-}
+
 
 .headSection {
   height: 100vh;
@@ -453,6 +449,10 @@ img {
 .scrollDown2:hover,
 .scrollUp:hover{
   cursor: pointer;
+}
+
+.scrollDown2 {
+  margin-bottom: 45px;
 }
 
 /* ===================================== 
