@@ -44,12 +44,13 @@ div.main-content {
 .card {
  display: flex; 
  flex-direction: column;
- background-color: white;
+ background-color: #6B6E70;
 }
 
 .btn {
  margin-top: auto;
  align-self: center;
+ color: #278da4
 }
 
 
@@ -70,10 +71,12 @@ div.main-content {
   /*display: flex;*/
   margin: 0 auto;
   justify-content: center;
+  color: #6B6E70;
 }
 
 .aboutDiv {
   grid-row: 2;
+  color: white;
 }
 
 .myBio {
@@ -81,11 +84,13 @@ div.main-content {
   max-width: 500px;
   max-height: 300px;
   overflow-y: auto;
+  color: #6B6E70;
 }
 
 .skillTitle {
   margin: 0 auto;
   margin-top: 100px;
+  color: white;
 }
 
 .skillTitleDiv {
@@ -98,7 +103,6 @@ div.main-content {
   font-size: 75px;
   animation: 2.5s fadeIn;
   animation-fill-mode: forwards;
-  align-self: : flex-end;
   /*top: 200px;
   position: relative;*/
   margin-top: auto;
@@ -108,11 +112,15 @@ div.main-content {
   font-size: 75px;
   margin-top: auto;
   margin-bottom: 45px;
+  animation: 2.5s fadeIn;
+  animation-fill-mode: forwards;
 }
 
 .backTo1 {
   font-size: 75px;
   position: relative;
+  animation: 2.5s fadeIn;
+  animation-fill-mode: forwards;
 }
 
 
@@ -159,6 +167,7 @@ div.main-content {
 
 .skillsDiv {
   margin-top: auto;
+
 }
 
 
@@ -176,8 +185,8 @@ body {
 	font-family: 'Raleway', sans-serif;
   text-align: center;
   margin: 0;
-  background-color: #aad2ed;
   overflow-x: hidden;
+  background-color: #474B4F;
 }
 
 
@@ -187,10 +196,7 @@ html{
   overflow-x: hidden;
 }
 
-a {
-  color: #278da4;
-  text-decoration: none;
-}
+
 
 h1 {
   font-family: 'Bree Serif', serif;
@@ -207,6 +213,16 @@ p {
   min-height: 1000px;
 }
 
+.main {
+  background-color: #474B4F;
+}
+
+#mainHead {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
 .fab,
 .fas {
   transition: .5s;
@@ -214,12 +230,12 @@ p {
 
 .card {
   padding: 1.5em 1em;
-  border: 1px solid #e1e1e1;
+  border: 1px solid #6B6E70;
   border-radius: 0.5em;
 }
 
 .card h1 {
-  color: #278da4; 
+  color: white; 
   line-height: 1.25;
   margin-top: 0;
   margin-bottom: 5px;
@@ -231,15 +247,16 @@ p {
   font-weight: bold;
   text-transform: uppercase;
   padding: 0.75em 1.5em;
-  background-color: #278da4;
+  background-color: #86C232;
   border-radius: 0.35em;
   display: inline-block;
   width: 125px;
   margin-top: 50px;
+  text-decoration: none;
 }
 
 .btn:hover {
-  background-color: rgba(39, 141, 164, 0.8);
+  background-color: #61892F;
 }
 
 .material-icons {
@@ -248,19 +265,14 @@ p {
 }
 
 
-footer {
-  background-color: #fbaea8;
-  height: 50px;
-}
-
-i{
+i {
   text-align: center;
   padding: 1px;
-  color: #278da4;
+  color: #86C232;
 }
 
 i:hover {
-  color: rgba(39, 141, 164, 0.7);
+  color: #61892F;
   cursor: pointer;
 }
 
@@ -269,7 +281,7 @@ i:hover {
 }
 
 .socialMedia a:hover {
-  color: rgba(39, 141, 164, 0.8);
+  color: #61892F;
   cursor: pointer;
 }
 
@@ -277,12 +289,13 @@ i:hover {
   font-size: 38px;
 }
 
-.socialMedia i {
+.socialMedia a{
   font-size: 40px;
+  color: #86C232;
 }
 
 header {
-  background-image: url("../Images/Nature4.jpg");
+  background-image: url("../Images/Nature2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -295,10 +308,15 @@ header {
   animation-fill-mode: forwards;
 }
 
+
 .skills {
   height: 100vh;
-  background-color: #C3E7FF;
+  background-color: #222629;
+  /* background: linear-gradient(320deg, rgba(255,255,255,1) 0%, rgba(195,231,255,1) 10%, rgba(0,189,255,1) 100%); */
+  /* background-image: linear-gradient(#379683, #5CDB95); */
 }
+
+
 
 .progList {
   list-style: none;
@@ -343,7 +361,7 @@ h4 {
   padding: 0;
   margin: 0;
   font-family: 'Roboto', serif;
-  color: white;
+  color: #6B6E70;;
   letter-spacing: 2px;
   animation: 2.5s spin;
   animation-fill-mode: forwards;
@@ -390,7 +408,7 @@ img {
 .modal-contents {
   height: 620px;
   width: 750px;
-  background-color: white;
+  background-color: #6B6E70;
   text-align: center;
   padding: 20px;
   position: relative;
@@ -406,13 +424,13 @@ img {
   top: 0;
   right: 5px;
   font-size: 25px;
-  color: lightgrey;
+  color: #86C232;
   cursor: pointer;
   margin-bottom: 1000px;
 }
 
 .close i:hover {
-  color: grey;
+  color: #61892F;
 }
 
 .toDoListModal {
@@ -428,11 +446,16 @@ img {
   align-items: center;
   margin: auto 0;
   font-family: 'Raleway', sans-serif;
+  color: white;
 }
 
 .none {
   display: none;
 }
+
+/* ===================================== 
+   etc
+======================================== */
 
 .scrollDown,
 .scrollDown2,
@@ -445,6 +468,10 @@ img {
   animation: 1s fadeIn;
   animation-fill-mode: forwards;
   font-size: 50px;
+}
+
+.scrollUp {
+  font-size: 52px;
 }
 
 .scrollDown:hover,
@@ -460,6 +487,46 @@ img {
 .scrollDown {
   margin-bottom: 3px;
 }
+
+.vertical-menu a {
+  background-color: transparent; 
+  display: block;
+  padding: 12px;
+}
+
+.vertical-menu a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.vertical-menu {
+  position: fixed;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #6B6E70;
+  letter-spacing: 0.15em;
+  font-family: 'Roboto', serif;
+}
+
+.vertical {
+  height: 200px;
+}
+
+hr {
+  border-color: rgba(255, 255, 255, 0.5);
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.active {
+  color: white;
+  font-weight: bold;
+}
+
+
 
 /* ===================================== 
    Media Queries
@@ -551,6 +618,10 @@ img {
     }
 
     .none {
+      display: none;
+    }
+
+    .vertical-menu {
       display: none;
     }
 }
@@ -649,6 +720,10 @@ img {
     .none {
       display: none;
     }
+
+    .vertical-menu {
+      display: none;
+    }
 }
 
 @media (max-width: 800px) and (orientation: landscape) {
@@ -725,9 +800,19 @@ img {
     .none {
       display: none;
     }
+    
+    .vertical-menu {
+      display: none;
+    }
 }
 
+@media screen and (max-width: 1200px) { 
 
+  .vertical-menu {
+    display: none;
+  }
+
+}
 
 
 /* ===================================== 
@@ -746,10 +831,10 @@ img {
 
 @keyframes spin {
   0% {
-    transform: rotate(180deg);
+    transform: rotateY(180deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotateY(0deg);
   }
 }
 

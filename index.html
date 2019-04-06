@@ -12,17 +12,35 @@
   </head>
   <body>
 
-    <header>
-      <div class="headSection">
+    <header  class="sections">
+
+      <div class="vertical-menu">
+        <a id="nav1" class="active">Home</a>
+        
+        <span class="vertical">
+            <hr width="1" size="200">
+        </span>
+        
+        <a id="nav2">About</a>
+        
+        <span class="vertical">
+            <hr width="1" size="200">
+          </span>
+        
+          <a id="nav3">Projects</a>
+      </div>
+      
+
+      <div class="headSection" id="header">
         <div class="headContent">
-          
+
           <div class="nameDiv"><h1 class="name">Garrett Molle</h1></div>
           <div class="bioDiv"><h3 class="bio">Front-End Web Developer</h3></div>
 
           <div class="socialMedia">
-            <a href="https://github.com/gmolle" class="fab fa-github-square" target="blank"></a>
-            <a href="" class="fab fa-linkedin" target="blank"></a>
-            <a href="" class="fas fa-file" target="blank"></a>
+            <a href="https://github.com/gmolle" class="fab fa-github-square icon" target="blank"></a>
+            <a href="" class="fab fa-linkedin icon" target="blank"></a>
+            <a href="" class="fas fa-file icon" target="blank"></a>
           </div>
         
         </div>
@@ -32,11 +50,14 @@
       </div>
     </header>
 
-    <div class="skills">
+
+    <div class="skills" id="skills">
       <div class="skillsDiv">
         <div class="aboutDiv">
-          <h2 class="about" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="200">About Me</h2>
-          <p class="myBio" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="300">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.<p>
+
+          <h2 class="about sections" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="200">About Me</h2>
+          <p class="myBio" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="300">My name is Garrett Molle and I am a front-end web developer from Ohio.
+            I have been interested in coding since I was in high school but was never able to find what I was interested in until I found web development.<p>
         </div>
         <div class="skillTitleDiv" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="200">
           <h3 class="skillTitle">Skills</h3>
@@ -65,64 +86,66 @@
       <span class="scrollDown2">Scroll down</span>
     </div>
 
+    <div class="main">
+      <div class="projectHeader " id="projectHeader" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500">
+        <h2 id="mainHead">Projects</h2>
+      </div> 
+      <div class="main-content sections">
 
-    <div class="projectHeader" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500">
-      <h2>Projects</h2>
-    </div> 
-    <div class="main-content">
 
-
-      <div class="card" data-aos="fade-down-right" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="200">
-    
-        <h1>To-Do List</h1>
-        
-        <img src="Images/todolist2.gif" class="toDoList">
-        
-        <div class="card-buttons">
-          <a class="btn" href="https://gmolle.github.io/ToDoList/" target="_blank">Demo</a>
-          <a class="btn" href="https://github.com/gmolle/ToDoList" target="_blank">Code</a>
-        </div>
-      </div>
+        <div class="card" data-aos="fade-down-right" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="200">
       
-     <div class="card" data-aos="fade-down-left" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="200">
-    
-        <h1>To-Do List</h1>
-        
-        <img src="Images/todolist2.gif" class="toDoList">
-        
-        <div class="card-buttons">
-          <a class="btn" href="#" target="_blank">Demo</a>
-          <a class="btn" href="#" target="_blank">Code</a>
+          <h1>To-Do List</h1>
+          
+          <img src="Images/todolist2.gif" class="toDoList">
+          
+          <div class="card-buttons">
+            <a class="btn" href="https://gmolle.github.io/ToDoList/" target="_blank">Demo</a>
+            <a class="btn" href="https://github.com/gmolle/ToDoList" target="_blank">Code</a>
+          </div>
         </div>
-      </div>
+        
+      <div class="card" data-aos="fade-down-left" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="200">
+      
+          <h1>To-Do List</h1>
+          
+          <img src="Images/todolist2.gif" class="toDoList">
+          
+          <div class="card-buttons">
+            <a class="btn" href="#" target="_blank">Demo</a>
+            <a class="btn" href="#" target="_blank">Code</a>
+          </div>
+        </div>
 
-      <div class="card" data-aos="fade-up-right" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="200">
-    
-        <h1>To-Do List</h1>
-        
-        <img src="Images/todolist2.gif" class="toDoList">
-        
-        <div class="card-buttons">
-          <a class="btn" href="#" target="blank">Demo</a>
-          <a class="btn" href="#" target="blank">Code</a>
+        <div class="card" data-aos="fade-up-right" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="200">
+      
+          <h1>To-Do List</h1>
+          
+          <img src="Images/todolist2.gif" class="toDoList">
+          
+          <div class="card-buttons">
+            <a class="btn" href="#" target="blank">Demo</a>
+            <a class="btn" href="#" target="blank">Code</a>
+          </div>
         </div>
-      </div>
 
-      <div class="card" data-aos="fade-up-left" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="200">
-    
-        <h1>To-Do List</h1>
-        
-        <img src="Images/todolist2.gif" class="toDoList">
-        
-        <div class="card-buttons">
-          <a class="btn" href="#">Demo</a>
-          <a class="btn" href="#">Code</a>
+        <div class="card" data-aos="fade-up-left" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="200">
+      
+          <h1>To-Do List</h1>
+          
+          <img src="Images/todolist2.gif" class="toDoList">
+          
+          <div class="card-buttons">
+            <a class="btn" href="#">Demo</a>
+            <a class="btn" href="#">Code</a>
+          </div>
         </div>
       </div>
-    </div>
+      <i class="fas fa-angle-double-up backTo1"></i>
+      <span class="scrollUp">Scroll to top of page</span>
+  </div>
     <!-- <div class="backTo1Div"> -->
-        <i class="fas fa-angle-double-up backTo1"></i>
-        <span class="scrollUp">Scroll to top of page</span>
+        
     <!-- </div> -->
   
 
@@ -146,6 +169,8 @@
 
     </footer>   -->
 
+  
+  <script type="text/javascript" src="JS/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="JS/app.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="text/javascript">

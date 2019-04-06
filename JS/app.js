@@ -1,4 +1,4 @@
-// Variables
+// constiables
 const button1 = document.querySelector('.section1');
 const button2 = document.querySelector('.section2');
 const button3 = document.querySelector('.backTo1');
@@ -12,6 +12,9 @@ const projectHeader = document.querySelector('.projectHeader');
 const scrollDown = document.querySelector('.scrollDown');
 const scrollDown2 = document.querySelector('.scrollDown2');
 const scrollUp = document.querySelector('.scrollUp');
+const nav1 = document.querySelector('#nav1');
+const nav2 = document.querySelector('#nav2');
+const nav3 = document.querySelector('#nav3');
 //////////////////////////////////////////
 
 // Functions
@@ -33,17 +36,34 @@ window.onclick = function(e) {
 
 //////////////////////////////////////////
 
-// Event Listeners
+
+
+
+// Event Listeners //
+
+// Scroll Button Events
 button1.addEventListener('click', () => {
 	skills.scrollIntoView(true);
 });
 
+nav1.addEventListener('click', () => {
+	window.scrollTo(0, 0);
+});
+
 button2.addEventListener('click', () => {
-	projectHeader.scrollIntoView(true);
+	skills.scrollIntoView(true);
+});
+
+nav2.addEventListener('click', () => {
+	skills.scrollIntoView(true);
 });
 
 button3.addEventListener('click', () => {
 	window.scrollTo(0, 0);
+});
+
+nav3.addEventListener('click', () => {
+	projectHeader.scrollIntoView(true);
 });
 
 button1.addEventListener('mouseover', () => {
@@ -88,6 +108,10 @@ scrollUp.addEventListener('click', () => {
 	window.scrollTo(0, 0);
 });
 
+//////////////////////////////////////////
+
+
+// Project zoom on hover animations
 for (let i = 0; i < projects.length; i++) {
 	projects[i].addEventListener('mouseover', () => {
 		projects[i].style.transform = 'scale(1.02)';
@@ -102,6 +126,7 @@ for (let i = 0; i < projects.length; i++) {
 	});
 }
 
+//////////////////////////////////////////
 
 // Modal Open & Close
 for (let i = 0; i < projects.length; i++) {
@@ -112,5 +137,28 @@ for (let i = 0; i < projects.length; i++) {
 
 close.addEventListener('click', () => {
 	modalBG.style.display = 'none';
+});
+//////////////////////////////////////////
+
+// Side nav bar color changes on scroll
+$(window).scroll(function() {
+	var scrollPos = $(window).scrollTop(),
+		navH     = $('.vertical-menu').height();
+	$('.sections').each(function(i){
+	  var offT = $(this).offset().top;
+	  if((offT-scrollPos-navH) <= 0) {
+		$('.active').removeClass('active')
+		$('.vertical-menu a').eq(i).addClass('active')
+	  }
+	})
+  });
+
+$(window).on('scroll', function () {
+	let scrollAmount = window.scrollY;
+  
+  if(scrollAmount == 0) {
+		nav1.className='active';
+	  nav2.className = '';
+  }
 });
 //////////////////////////////////////////
