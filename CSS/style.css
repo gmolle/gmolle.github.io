@@ -206,9 +206,6 @@ a.fade {
   opacity: 1;
 }
 
-section.navClose {
-  display: none;
-}
 
 
 /* ===================================== 
@@ -591,9 +588,7 @@ h6 {
   display: block;
 }
 
-nav {
-  display: none;
-}
+
 
 /* ===================================== 
    Media Queries
@@ -684,15 +679,14 @@ nav {
       font-family: 'Raleway', sans-serif;
     }
 
-    .none {
-      display: none;
-    }
+    
 
     .vertical-menu {
       opacity: 0;
       width: 0;
       transition: all 1s ease;
       /* left: -200px; */
+      z-index: 2;
     }
   
     .vertical-menu.open {

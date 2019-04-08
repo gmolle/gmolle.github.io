@@ -18,6 +18,10 @@ const nav3 = document.querySelector('#nav3');
 const navMenu = document.querySelector('.nav-menu');
 const verticalMenu = document.querySelector('.vertical-menu');
 const navClose = document.querySelector('.navClose');
+
+const nav1Open = document.querySelector('#nav1.open');
+const nav2Open = document.querySelector('#nav2.open');
+const nav3Open = document.querySelector('#nav3.open');
 //////////////////////////////////////////
 
 // Functions
@@ -161,14 +165,6 @@ $(window).scroll(function() {
 	})
   });
 
-$(window).on('scroll', function () {
-	let scrollAmount = window.scrollY;
-  
-  if(scrollAmount == 0) {
-		nav1.className='active';
-	  nav2.className = '';
-  }
-});
 
 //////////////////////////////////////////
 
@@ -181,6 +177,8 @@ navMenu.addEventListener('click', () => {
 	nav2.classList.toggle("open");
 	nav3.classList.toggle("open");
 });
+
+
 
 
 
