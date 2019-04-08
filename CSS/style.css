@@ -689,8 +689,37 @@ nav {
     }
 
     .vertical-menu {
-      flex-direction: row;
-      animation: 1s fadeIn;
+      opacity: 0;
+      width: 0;
+      transition: all 1s ease;
+      /* left: -200px; */
+    }
+  
+    .vertical-menu.open {
+      opacity: 1;
+      width: 200px;
+      transition: all 1s ease;
+      /* left: 0px; */
+    }
+  
+    #nav1,
+    #nav2,
+    #nav3 {
+      display: none;
+    }
+  
+    #nav1.open,
+    #nav2.open,
+    #nav3.open {
+      display: block;
+    }
+    
+  
+    .vertical-menu a {
+      padding: 0;
+      margin: 0;
+      border-bottom: 1px solid #474B4F;
+      width: 100%;
     }
 
 
@@ -703,9 +732,7 @@ nav {
       top: 5px;
     }
 
-    .vertical-menu {
-      display: none;
-    }
+    
 
 
 }
@@ -806,8 +833,37 @@ nav {
     }
 
     .vertical-menu {
-      flex-direction: row;
-      animation: 1s fadeIn;
+      opacity: 0;
+      width: 0;
+      transition: all 1s ease;
+      /* left: -200px; */
+    }
+  
+    .vertical-menu.open {
+      opacity: 1;
+      width: 200px;
+      transition: all 1s ease;
+      /* left: 0px; */
+    }
+  
+    #nav1,
+    #nav2,
+    #nav3 {
+      display: none;
+    }
+  
+    #nav1.open,
+    #nav2.open,
+    #nav3.open {
+      display: block;
+    }
+    
+  
+    .vertical-menu a {
+      padding: 0;
+      margin: 0;
+      border-bottom: 1px solid #474B4F;
+      width: 100%;
     }
 
     .vertical {
@@ -819,9 +875,7 @@ nav {
       top: 5px;
     }
 
-    .vertical-menu {
-      display: none;
-    }
+    
 
     
 }
@@ -902,8 +956,37 @@ nav {
     }
     
     .vertical-menu {
-      flex-direction: row;
-      animation: 1s fadeIn;
+      opacity: 0;
+      width: 0;
+      transition: all 1s ease;
+      /* left: -200px; */
+    }
+  
+    .vertical-menu.open {
+      opacity: 1;
+      width: 200px;
+      transition: all 1s ease;
+      /* left: 0px; */
+    }
+  
+    #nav1,
+    #nav2,
+    #nav3 {
+      display: none;
+    }
+  
+    #nav1.open,
+    #nav2.open,
+    #nav3.open {
+      display: block;
+    }
+    
+  
+    .vertical-menu a {
+      padding: 0;
+      margin: 0;
+      border-bottom: 1px solid #474B4F;
+      width: 100%;
     }
 
     .vertical {
@@ -915,9 +998,7 @@ nav {
       top: 5px;
     }
 
-    .vertical-menu {
-      display: none;
-    }
+  
   }
 
 
