@@ -170,6 +170,46 @@ div.main-content {
 
 }
 
+.nav-menu {
+  display: none;
+  font-size: 25px;
+  margin: 0 10px;
+  transition: .25s;
+  position: fixed;
+  left: 0;
+  color: white;
+  z-index: 3;
+}
+
+.nav-menu.open {
+  transform: rotate(-90deg);
+  transition: .25s;
+}
+
+.vertical-menu.open {
+  display: flex;
+  background-color: black;
+  height: 100vh;
+  width: 200px;
+  transition: 2s;
+  z-index: 2;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vertical-menu.open a {
+  width: 25%;
+}
+
+a.fade {
+  opacity: 1;
+}
+
+section.navClose {
+  display: none;
+}
+
 
 /* ===================================== 
    Page Styles
@@ -223,10 +263,10 @@ p {
   color: white;
 }
 
-.fab,
+/* .fab,
 .fas {
   transition: .5s;
-}
+} */
 
 .card {
   padding: 1.5em 1em;
@@ -514,16 +554,20 @@ img {
   color: #6B6E70;
   letter-spacing: 0.15em;
   font-family: 'Roboto', serif;
+  
 }
 
 .vertical {
   height: 200px;
+  justify-content: center;
+  display: flex;
 }
 
 hr {
   border-color: rgba(255, 255, 255, 0.5);
   padding-top: 0;
   margin-top: 0;
+  clear: left;
 }
 
 .active {
@@ -545,6 +589,10 @@ h6 {
   margin: 0;
   padding: 0;
   display: block;
+}
+
+nav {
+  display: none;
 }
 
 /* ===================================== 
@@ -600,7 +648,7 @@ h6 {
     .modal-contents {
       height: 400px;
       width: 300px;
-      background-color: white;
+      background-color: #6B6E70;
       text-align: center;
       padding: 20px;
       position: relative;
@@ -612,7 +660,7 @@ h6 {
       top: 0;
       right: 5px;
       font-size: 25px;
-      color: lightgrey;
+      color: #86C232;
       cursor: pointer;
       margin-bottom: 1000px;
     }
@@ -642,11 +690,24 @@ h6 {
 
     .vertical-menu {
       flex-direction: row;
+      animation: 1s fadeIn;
     }
+
 
     .vertical {
       display: none;
     }
+
+    .nav-menu {
+      display: block;
+      top: 5px;
+    }
+
+    .vertical-menu {
+      display: none;
+    }
+
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -704,7 +765,7 @@ h6 {
     .modal-contents {
       height: 600px;
       width: 700px;
-      background-color: white;
+      background-color: #6B6E70;
       text-align: center;
       padding: 20px;
       position: relative;
@@ -716,7 +777,7 @@ h6 {
       top: 0;
       right: 5px;
       font-size: 25px;
-      color: lightgrey;
+      color: #86C232;
       cursor: pointer;
       margin-bottom: 1000px;
     }
@@ -746,11 +807,23 @@ h6 {
 
     .vertical-menu {
       flex-direction: row;
+      animation: 1s fadeIn;
     }
 
     .vertical {
       display: none;
     }
+
+    .nav-menu {
+      display: block;
+      top: 5px;
+    }
+
+    .vertical-menu {
+      display: none;
+    }
+
+    
 }
 
 @media (max-width: 800px) and (orientation: landscape) {
@@ -786,7 +859,7 @@ h6 {
     .modal-contents {
       height: 300px;
       width: 400px;
-      background-color: white;
+      background-color: #6B6E70;
       text-align: center;
       padding: 20px;
       position: relative;
@@ -798,7 +871,7 @@ h6 {
       top: 0;
       right: 5px;
       font-size: 25px;
-      color: lightgrey;
+      color: #86C232;
       cursor: pointer;
       margin-bottom: 1000px;
     }
@@ -830,18 +903,57 @@ h6 {
     
     .vertical-menu {
       flex-direction: row;
+      animation: 1s fadeIn;
     }
 
     .vertical {
       display: none;
     }
-}
+
+    .nav-menu {
+      display: block;
+      top: 5px;
+    }
+
+    .vertical-menu {
+      display: none;
+    }
+  }
+
 
 @media screen and (max-width: 1200px) { 
 
   .vertical-menu {
-    flex-direction: row;
-    justify-content: center;
+    opacity: 0;
+    width: 0;
+    transition: all 1s ease;
+    /* left: -200px; */
+  }
+
+  .vertical-menu.open {
+    opacity: 1;
+    width: 200px;
+    transition: all 1s ease;
+    /* left: 0px; */
+  }
+
+  #nav1,
+  #nav2,
+  #nav3 {
+    display: none;
+  }
+
+  #nav1.open,
+  #nav2.open,
+  #nav3.open {
+    display: block;
+  }
+  
+
+  .vertical-menu a {
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #474B4F;
     width: 100%;
   }
 
@@ -849,7 +961,19 @@ h6 {
     display: none;
   }
 
+  .nav-menu {
+    display: block;
+    top: 5px;
+  }
+
+  #nav1,
+  #nav2,
+  #nav3 {
+    width: 50%;
+    padding-bottom: 10px;
+  }
 }
+
 
 
 /* ===================================== 
@@ -865,6 +989,7 @@ h6 {
     opacity: 1;
   }
 }
+
 
 @keyframes spin {
   0% {
@@ -901,3 +1026,4 @@ h6 {
         opacity: 0;
     }
 }
+

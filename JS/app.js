@@ -15,6 +15,9 @@ const scrollUp = document.querySelector('.scrollUp');
 const nav1 = document.querySelector('#nav1');
 const nav2 = document.querySelector('#nav2');
 const nav3 = document.querySelector('#nav3');
+const navMenu = document.querySelector('.nav-menu');
+const verticalMenu = document.querySelector('.vertical-menu');
+const navClose = document.querySelector('.navClose');
 //////////////////////////////////////////
 
 // Functions
@@ -35,6 +38,11 @@ window.onclick = function(e) {
 }
 
 //////////////////////////////////////////
+
+function openNav() {
+	verticalMenu.style.width = '100%';
+	navMenu.style.display = 'none'
+}
 
 
 
@@ -162,5 +170,21 @@ $(window).on('scroll', function () {
   }
 });
 
-
 //////////////////////////////////////////
+
+// Mobile Nav Bar
+
+navMenu.addEventListener('click', () => {
+	navMenu.classList.toggle("open");
+	verticalMenu.classList.toggle("open");
+	nav1.classList.toggle("open");
+	nav2.classList.toggle("open");
+	nav3.classList.toggle("open");
+});
+
+
+
+
+
+
+
