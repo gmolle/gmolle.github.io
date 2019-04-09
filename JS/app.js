@@ -22,6 +22,9 @@ const navClose = document.querySelector('.navClose');
 const nav1Open = document.querySelector('#nav1.open');
 const nav2Open = document.querySelector('#nav2.open');
 const nav3Open = document.querySelector('#nav3.open');
+
+const navs = document.querySelectorAll('navI');
+
 //////////////////////////////////////////
 
 // Functions
@@ -42,14 +45,6 @@ window.onclick = function(e) {
 }
 
 //////////////////////////////////////////
-
-function openNav() {
-	verticalMenu.style.width = '100%';
-	navMenu.style.display = 'none'
-}
-
-
-
 
 // Event Listeners //
 
@@ -150,6 +145,7 @@ for (let i = 0; i < projects.length; i++) {
 close.addEventListener('click', () => {
 	modalBG.style.display = 'none';
 });
+
 //////////////////////////////////////////
 
 // Side nav bar color changes on scroll
@@ -170,19 +166,34 @@ $(window).scroll(function() {
 
 // Mobile Nav Bar
 
-navMenu.addEventListener('click', () => {
+const navBar = () => {
 	navMenu.classList.toggle("open");
 	verticalMenu.classList.toggle("open");
 	nav1.classList.toggle("open");
 	nav2.classList.toggle("open");
 	nav3.classList.toggle("open");
+}
+
+navMenu.addEventListener('click', () => {
+	navBar();
 });
 
+nav1.addEventListener('click', () => {
+	navBar();
+})
 
+nav2.addEventListener('click', () => {
+	navBar();
+})
 
+nav3.addEventListener('click', () => {
+	navBar();
+})
 
+// for(let i = 0; i < navs.lenghth; i++) {
+// 	navs[i].addEventListener('click', () => {
+// 		navBar();
+// 	});
+// }
 
-
-
-
-
+//////////////////////////////////////////
