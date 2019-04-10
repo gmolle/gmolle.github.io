@@ -343,7 +343,7 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover; 
   height: 100vh;
-  animation: 2.5s fadeIn;
+  animation: 4s fadeIn;
   animation-fill-mode: forwards;
 }
 
