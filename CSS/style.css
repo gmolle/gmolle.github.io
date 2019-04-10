@@ -430,6 +430,10 @@ img {
   box-shadow: 7px 10px 20px rgba(0,0,0,.9);
 }
 
+.closeNav {
+  display: none;
+}
+
 
 /* ===================================== 
    Modal's
@@ -1048,6 +1052,7 @@ h6 {
     font-size: 25px;
     color: #86C232;
     cursor: pointer;
+    display: block;
   }
 
   #nav1,
