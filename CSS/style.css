@@ -101,7 +101,7 @@ div.main-content {
 
 .section1 {
   font-size: 75px;
-  animation: 2.5s fadeInSpin;
+  animation: 2.5s fadeIn;
   animation-fill-mode: forwards;
   /*top: 200px;
   position: relative;*/
@@ -569,7 +569,7 @@ img {
   color: #6B6E70;
   letter-spacing: 0.15em;
   font-family: 'Roboto', serif;
-  
+  animation: 2.5s slideUp2;
 }
 
 .vertical {
@@ -1173,5 +1173,17 @@ h6 {
   }
    100% {
     transform: translateY(0px) rotateY(0deg);
+  }
+}
+
+@keyframes slideUp2 {
+  0% { 
+      transform: translateY(500px);
+  }
+  80% {
+    transform: translateY(-5px);
+  }
+   100% {
+    transform: translateY(0px);
   }
 }
