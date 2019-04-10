@@ -167,7 +167,6 @@ $(window).scroll(function() {
 // Mobile Nav Bar
 
 const navBar = () => {
-	navMenu.classList.toggle("open");
 	verticalMenu.classList.toggle("open");
 	nav1.classList.toggle("open");
 	nav2.classList.toggle("open");
@@ -185,15 +184,24 @@ navClose.addEventListener('click', () => {
 });
 
 nav1.addEventListener('click', () => {
-	navBar();
+	if (nav1.classList.contains("open")) {
+		navBar();
+		navMenu.style.display = 'block';
+	}
 })
 
 nav2.addEventListener('click', () => {
-	navBar();
+	if (nav2.classList.contains("open")) {
+		navBar();
+		navMenu.style.display = 'block';
+	}
 })
 
 nav3.addEventListener('click', () => {
-	navBar();
+	if (nav3.classList.contains("open")) {
+		navBar();
+		navMenu.style.display = 'block';
+	}
 })
 
 // for(let i = 0; i < navs.lenghth; i++) {
