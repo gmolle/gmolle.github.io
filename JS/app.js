@@ -17,7 +17,7 @@ const nav2 = document.querySelector('#nav2');
 const nav3 = document.querySelector('#nav3');
 const navMenu = document.querySelector('.nav-menu');
 const verticalMenu = document.querySelector('.vertical-menu');
-const navClose = document.querySelector('.navClose');
+const navClose = document.querySelector('.closeNav');
 
 const nav1Open = document.querySelector('#nav1.open');
 const nav2Open = document.querySelector('#nav2.open');
@@ -176,6 +176,12 @@ const navBar = () => {
 
 navMenu.addEventListener('click', () => {
 	navBar();
+	navMenu.style.display = 'none';
+});
+
+navClose.addEventListener('click', () => {
+	navBar();
+	navMenu.style.display = 'block';
 });
 
 nav1.addEventListener('click', () => {

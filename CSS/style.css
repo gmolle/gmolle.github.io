@@ -1041,6 +1041,15 @@ h6 {
     top: 5px;
   }
 
+  .closeNav {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 25px;
+    color: #86C232;
+    cursor: pointer;
+  }
+
   #nav1,
   #nav2,
   #nav3 {
