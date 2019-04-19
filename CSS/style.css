@@ -414,7 +414,8 @@ img {
 .toDoList,
 .toDoList2,
 .toDoList3,
-.toDoList4 {
+.toDoList4,
+.recipeImg {
   height: 300px;
   border-radius: 0.5em;
 }
@@ -422,7 +423,8 @@ img {
 .toDoList:hover,
 .toDoList2:hover,
 .toDoList3:hover,
-.toDoList4:hover {
+.toDoList4:hover,
+.recipeImg:hover {
   cursor: pointer;
   border-radius: 0.5em;
   box-shadow: 7px 10px 20px rgba(0,0,0,.9);
@@ -510,6 +512,62 @@ img {
 
 .none {
   display: none;
+}
+
+.bg-modal2 {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-contents2 {
+  height: 620px;
+  width: 750px;
+  background-color: #6B6E70;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  border-radius: 4px;
+  /*display: flex;*/
+  /*margin: 0 auto;*/
+  animation: 1s bouncing;
+  animation-fill-mode: forwards;
+}
+
+.recipeModal {
+  width: 700px;
+  height: 85%;
+  border-radius: 0.5em;
+  display: block;
+  margin: 0 auto;
+}
+
+.modalP2 {
+  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+.close2 i{
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 25px;
+  color: #86C232;
+  cursor: pointer;
+  margin-bottom: 1000px;
+}
+
+.close2 i:hover {
+  color: #61892F;
 }
 
 /* ===================================== 

@@ -3,8 +3,11 @@ const button1 = document.querySelector('.section1');
 const button2 = document.querySelector('.section2');
 const button3 = document.querySelector('.backTo1');
 const modalBG = document.querySelector('.bg-modal');
+const modalBG2 = document.querySelector('.bg-modal2');
 const close = document.querySelector('.close');
+const close2 = document.querySelector('.close2');
 const projects = document.querySelectorAll('.toDoList');
+const recipe = document.querySelector('.recipeImg');
 const skills = document.querySelector('.skills');
 const main = document.querySelector('.main-content');
 const backTo1 = document.querySelector('.backTo1Div')
@@ -30,17 +33,19 @@ const navs = document.querySelectorAll('navI');
 // Functions
 
 // Closes modal when you hit ESC
-window.onkeydown = function(event) {
-    if (event.keyCode == 27) {
-        modalBG.style.display = 'none';
-    }
+window.onkeydown = function (event) {
+	if (event.keyCode == 27) {
+		modalBG.style.display = 'none';
+		modalBG2.style.display = 'none';
+	}
 };
 
 
 // Closes modal when you click the modal background
-window.onclick = function(e) {
-	if (e.target == modalBG) {
+window.onclick = function (e) {
+	if (e.target == modalBG || e.target == modalBG2) {
 		modalBG.style.display = 'none';
+		modalBG2.style.display = 'none';
 	}
 }
 
@@ -133,6 +138,18 @@ for (let i = 0; i < projects.length; i++) {
 	});
 }
 
+recipe.addEventListener('mouseover', () => {
+	recipe.style.transform = 'scale(1.02)';
+	recipe.style.transition = '.5s';
+});
+
+recipe.addEventListener('mouseout', () => {
+	recipe.style.transform = 'scale(1)';
+	recipe.style.transition = '.5s';
+});
+
+
+
 //////////////////////////////////////////
 
 // Modal Open & Close
@@ -142,24 +159,33 @@ for (let i = 0; i < projects.length; i++) {
 	});
 }
 
+recipe.addEventListener('click', () => {
+	modalBG2.style.display = 'flex';
+});
+
+
 close.addEventListener('click', () => {
 	modalBG.style.display = 'none';
+});
+
+close2.addEventListener('click', () => {
+	modalBG2.style.display = 'none';
 });
 
 //////////////////////////////////////////
 
 // Side nav bar color changes on scroll
-$(window).scroll(function() {
+$(window).scroll(function () {
 	var scrollPos = $(window).scrollTop(),
-		navH     = $('.vertical-menu').height();
-	$('.sections').each(function(i){
-	  var offT = $(this).offset().top;
-	  if((offT-scrollPos-navH) <= 0) {
-		$('.active').removeClass('active')
-		$('.vertical-menu a').eq(i).addClass('active')
-	  }
+		navH = $('.vertical-menu').height();
+	$('.sections').each(function (i) {
+		var offT = $(this).offset().top;
+		if ((offT - scrollPos - navH) <= 0) {
+			$('.active').removeClass('active')
+			$('.vertical-menu a').eq(i).addClass('active')
+		}
 	})
-  });
+});
 
 
 //////////////////////////////////////////
