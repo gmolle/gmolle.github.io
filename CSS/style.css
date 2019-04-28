@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500');
 
 /* ===================================== 
    ScrollBar
@@ -35,10 +34,16 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 20px;
+  position: relative;
+  z-index: 0;
 }
 
 div.main-content {
   padding-top: 0;
+}
+
+.socialMedia a span {
+  font-family: 'Roboto', sans-serif;
 }
 
 .card {
@@ -53,6 +58,22 @@ div.main-content {
  color: #278da4
 }
 
+.about {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.progList h4,
+.progList2 h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.progList li,
+.progList2 li {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
 
 .skills {
   display: flex;
@@ -63,6 +84,8 @@ div.main-content {
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
+  position: relative;
+  z-index: -1;
 }
 
 .prog {
@@ -85,12 +108,15 @@ div.main-content {
   max-height: 300px;
   overflow-y: auto;
   color: #6B6E70;
+  font-family: 'Roboto', sans-serif;
 }
 
 .skillTitle {
   margin: 0 auto;
   margin-top: 100px;
   color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
 
 .skillTitleDiv {
@@ -107,6 +133,7 @@ div.main-content {
   position: relative;*/
   margin-top: auto;
 }
+
 
 .section2 {
   font-size: 75px;
@@ -222,6 +249,8 @@ body {
   margin: 0;
   overflow-x: hidden;
   background-color: #474B4F;
+  z-index: -2;
+  position: relative;
 }
 
 
@@ -250,12 +279,26 @@ p {
 
 .main {
   background-color: #474B4F;
+  position: relative;
+  z-index: -1;
 }
 
 #mainHead {
   padding: 0;
   margin: 0;
   color: white;
+  margin-top: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.card h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.card-buttons a {
+  font-family: 'Roboto', sans-serif;
 }
 
 /* .fab,
@@ -292,6 +335,7 @@ p {
 
 .btn:hover {
   background-color: #61892F;
+  color: white !important;
 }
 
 .material-icons {
@@ -394,6 +438,7 @@ h4 {
   letter-spacing: 2px;
   animation: 2.5s slideInRight;
   animation-fill-mode: forwards;
+  font-weight: 500;
 }
 
 .bio {
@@ -404,6 +449,10 @@ h4 {
   letter-spacing: 2px;
   animation: 2.5s slideInLeft;
   animation-fill-mode: forwards;
+}
+
+.nav-item a {
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -469,7 +518,7 @@ img {
 .modal-contents {
   height: 620px;
   width: 750px;
-  background-color: #6B6E70;
+  background-color: rgb(255, 255, 255);
   text-align: center;
   padding: 20px;
   position: relative;
@@ -478,6 +527,21 @@ img {
   /*margin: 0 auto;*/
   animation: 1s bouncing;
   animation-fill-mode: forwards;
+}
+
+.modal-title {
+  font-family: 'Roboto', serif;
+  font-weight: 500;
+}
+
+.modal-body p {
+  font-family: 'Roboto', serif;
+}
+
+.close {
+  font-size: 50px;
+  padding: 0 !important;
+  padding-right: 5px !important;
 }
 
 .close i{
@@ -495,10 +559,11 @@ img {
 }
 
 .toDoListModal {
-  width: 700px;
+  width: 450px;
   border-radius: 0.5em;
   display: block;
   margin: 0 auto;
+  border: 1px solid black;
 }
 
 .modalP {
@@ -513,6 +578,29 @@ img {
 .none {
   display: none;
 }
+
+.navbar {
+  /* background: transparent !important; */
+  animation: 2.5s slideInLeft2;
+  background-color: rgba(255, 255, 255,) !important;
+}
+
+.navbar a {
+  color: #6B6E70 !important;
+  transition: 0.25s;
+  z-index: 5;
+}
+
+.navbar a:hover {
+  cursor: pointer;
+  /* text-decoration: underline; */
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  transition: 0.25s;
+  padding: 0;
+  padding-bottom: 5px;
+}
+
 
 .bg-modal2 {
   background-color: rgba(0, 0, 0, 0.8);
@@ -539,12 +627,17 @@ img {
   animation-fill-mode: forwards;
 }
 
+p {
+  margin-bottom: 0;
+}
+
 .recipeModal {
-  width: 700px;
-  height: 85%;
+  width: 450px;
+  height: 350px;
   border-radius: 0.5em;
   display: block;
   margin: 0 auto;
+  border: 1px solid black;
 }
 
 .modalP2 {
@@ -585,6 +678,7 @@ img {
   animation: 1s fadeIn;
   animation-fill-mode: forwards;
   font-size: 50px;
+  font-family: 'Roboto', serif;
 }
 
 .scrollUp {
@@ -643,9 +737,26 @@ hr {
   clear: left;
 }
 
-.active {
-  color: white;
+.navbar a.activeLink {
+  color: white !important;
   font-weight: bold;
+  /* text-decoration: underline; */
+  border-bottom: 5px solid white;
+  transition: 0.25s;
+  padding: 0;
+  padding-bottom: 5px;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-light .navbar-toggler {
+  border-color: white;
+}
+
+.navbar-light .navbar-toggler:focus {
+  border-color: white;
 }
 
 h6 {
@@ -1207,6 +1318,15 @@ h6 {
   }
    100% {
     transform: translateX(0px) rotateY(0deg);
+  }
+}
+
+@keyframes slideInLeft2 {
+  0% { 
+    transform: translateX(-2500px);
+  }
+   100% {
+    transform: translateX(0px);
   }
 }
 
