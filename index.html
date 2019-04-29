@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Garrett Molle Portfolio</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Raleway" rel="stylesheet">
   <link href="CSS/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -18,6 +16,8 @@
 <body>
 
   <header class="sections">
+
+    <!-- NAVBAR -->
 
     <nav class="navbar navbar-expand-xl navbar-light bg-dark d-flex fixed-top">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -41,7 +41,7 @@
 
 
 
-
+    <!-- HEAD/HOME PAGE -->
 
     <div class="headSection" id="header">
       <div class="headContent">
@@ -72,6 +72,7 @@
     </div>
   </header>
 
+  <!-- ABOUT ME SECTION -->
 
   <div class="skills sections" id="skills">
     <div class="skillsDiv">
@@ -117,19 +118,21 @@
     <span class="scrollDown2">Projects</span>
   </div>
 
+  <!-- PROJECTS -->
+
   <div class="main sections" id="projectHeader">
     <div class="projectHeader " data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500">
       <h2 id="mainHead">Projects</h2>
     </div>
     <div class="main-content">
 
+      <!-- PROJECT 1 -->
 
       <div class="card" data-aos="fade-down-right" data-aos-easing="linear" data-aos-duration="500"
         data-aos-delay="200">
-
         <h1>To-Do List</h1>
 
-        <img src="Images/todolist2.gif" class="toDoList" data-toggle="modal" data-target="#toDoListModal">
+        <img src="Images/todolist.gif" class="toDoList" data-toggle="modal" data-target="#toDoListModal" alt="ToDoList">
 
         <div class="card-buttons">
           <a class="btn" href="https://gmolle.github.io/ToDoList/" target="_blank">Demo</a>
@@ -137,11 +140,12 @@
         </div>
       </div>
 
-      <div class="card" data-aos="fade-down-left" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="200">
+      <!-- PROJECT 2 -->
 
+      <div class="card" data-aos="fade-down-left" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="200">
         <h1>Recipe Finder</h1>
 
-        <img src="Images/recipe.gif" class="recipeImg" data-toggle="modal" data-target="#recipeModal">
+        <img src="Images/recipe.gif" class="recipeImg" data-toggle="modal" data-target="#recipeModal" alt="Recipes">
 
         <div class="card-buttons">
           <a class="btn" href="https://gmolle-recipes.netlify.com/" target="_blank">Demo</a>
@@ -149,11 +153,12 @@
         </div>
       </div>
 
-      <div class="card" data-aos="fade-up-right" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="200">
+      <!-- PROJECT 3 -->
 
+      <div class="card" data-aos="fade-up-right" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="200">
         <h1>To-Do List</h1>
 
-        <img src="Images/todolist2.gif" class="toDoList">
+        <img src="Images/todolist.gif" class="toDoList" alt="ToDoList">
 
         <div class="card-buttons">
           <a class="btn" href="#" target="blank">Demo</a>
@@ -161,11 +166,12 @@
         </div>
       </div>
 
-      <div class="card" data-aos="fade-up-left" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="200">
+      <!-- PROJECT 4 -->
 
+      <div class="card" data-aos="fade-up-left" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="200">
         <h1>To-Do List</h1>
 
-        <img src="Images/todolist2.gif" class="toDoList">
+        <img src="Images/todolist.gif" class="toDoList" alt="ToDoList">
 
         <div class="card-buttons">
           <a class="btn" href="#">Demo</a>
@@ -176,15 +182,8 @@
     <i class="fas fa-angle-double-up backTo1"></i>
     <span class="scrollUp">Home</span>
   </div>
-  <!-- <div class="backTo1Div"> -->
-
-  <!-- </div> -->
-
-
-
 
   <!-- MODAL'S -->
-
 
   <div class="modal fade" id="toDoListModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
@@ -197,7 +196,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <img src="Images/todolist2.gif" class="toDoListModal mb-3">
+          <img src="Images/todolist.gif" class="toDoListModal mb-3" alt="ToDoList">
           <p>A simple to-do list program. Allows you to add tasks you need to complete as well as allows
             you
             to select completed tasks. You can click the toggle button to toggle the completed tasks on/off.</p>
@@ -217,7 +216,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <img src="Images/recipe2.gif" class="recipeModal mb-3 rounded">
+          <img src="Images/recipe.gif" class="recipeModal mb-3 rounded" alt="Recipes">
           <p>An app that is used to search for different recipes. Shows the ingredients and the total
             number
             of calories. Also shows a picture of the food

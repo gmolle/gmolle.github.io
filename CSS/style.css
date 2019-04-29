@@ -1,6 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500');
 
 /* ===================================== 
+    General Styling
+======================================== */
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #474B4F;
+  z-index: -2;
+  position: relative;
+}
+
+
+html{
+  scroll-behavior: smooth;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+
+
+
+
+/* ===================================== 
    ScrollBar
 ======================================== */
 
@@ -24,358 +54,13 @@
   background: #555; 
 }
 
-/* ===================================== 
-   Grid & Flexbox Layout
-======================================== */
 
-.main-content {
-  width: 95%;
-  max-width: 1000px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-gap: 20px;
-  position: relative;
-  z-index: 0;
-}
-
-div.main-content {
-  padding-top: 0;
-}
-
-.socialMedia a span {
-  font-family: 'Roboto', sans-serif;
-}
-
-.card {
- display: flex; 
- flex-direction: column;
- background-color: #6B6E70;
-}
-
-.btn {
- margin-top: auto;
- align-self: center;
- color: #278da4
-}
-
-.about {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-}
-
-.progList h4,
-.progList2 h4 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-}
-
-.progList li,
-.progList2 li {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
-
-.skills {
-  display: flex;
-  /*grid-template-columns: repeat(1, minmax(280px, 1fr));
-  grid-template-rows: repeat(7, minmax(100px, 1fr));
-  grid-gap: 20px;
-  grid-auto-columns: 0px;*/
-  justify-content: center;
-  align-items: center;
-  flex-flow: column nowrap;
-  position: relative;
-  z-index: -1;
-}
-
-.prog {
-  /*grid-row: 4;
-  grid-column: 1;*/
-  /*display: flex;*/
-  margin: 0 auto;
-  justify-content: center;
-  color: #6B6E70;
-}
-
-.aboutDiv {
-  grid-row: 2;
-  color: white;
-}
-
-.myBio {
-  margin: 0 auto;
-  max-width: 500px;
-  max-height: 300px;
-  overflow-y: auto;
-  color: #6B6E70;
-  font-family: 'Roboto', sans-serif;
-}
-
-.skillTitle {
-  margin: 0 auto;
-  margin-top: 100px;
-  color: white;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-}
-
-.skillTitleDiv {
-  display: flex;
-  grid-row: 3;
-  grid-column: 1;
-}
-
-.section1 {
-  font-size: 75px;
-  animation: 2.5s fadeIn;
-  animation-fill-mode: forwards;
-  /*top: 200px;
-  position: relative;*/
-  margin-top: auto;
-}
-
-
-.section2 {
-  font-size: 75px;
-  margin-top: auto;
-  margin-bottom: 45px;
-  animation: 2.5s fadeIn;
-  animation-fill-mode: forwards;
-}
-
-.backTo1 {
-  font-size: 75px;
-  position: relative;
-  animation: 2.5s fadeIn;
-  animation-fill-mode: forwards;
-}
-
-
-
-.headSection {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column nowrap;
-}
-
-.card-buttons {
-  justify-content: flex-end;
-}
-
-
-.socialMedia {
-  /* animation: 2.5s slideDown; */
-  animation-fill-mode: forwards;
-  padding-top: 10px;
-}
-
-.headContent {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-self: center;
-  margin-top: auto;
-}
-
-.headBottom {
-  align-items: flex-end;
-  margin: 0 auto;
-}
-
-.nameDiv {
-  align-items: center;
-}
-
-.bioDiv {
-  align-items: flex-end;
-}
-
-.skillsDiv {
-  margin-top: auto;
-
-}
-
-.nav-menu {
-  display: none;
-  font-size: 25px;
-  margin: 0 10px;
-  transition: .25s;
-  position: fixed;
-  left: 0;
-  color: white;
-  z-index: 3;
-  animation: 1s fadeInSpin;
-}
-
-
-
-.vertical-menu.open {
-  display: flex;
-  background-color: black;
-  height: 100vh;
-  width: 200px;
-  transition: 2s;
-  z-index: 2;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: center;
-}
-
-.vertical-menu.open a {
-  width: 25%;
-}
-
-a.fade {
-  opacity: 1;
-}
 
 
 
 /* ===================================== 
-   Page Styles
+   Header Styling and Layout
 ======================================== */
-
-* {
-	box-sizing: border-box;
-}
-
-body {
-  font-size: 1rem;
-  line-height: 1.5;
-	font-family: 'Raleway', sans-serif;
-  text-align: center;
-  margin: 0;
-  overflow-x: hidden;
-  background-color: #474B4F;
-  z-index: -2;
-  position: relative;
-}
-
-
-html{
-  scroll-behavior: smooth;
-  margin: 0;
-  overflow-x: hidden;
-}
-
-
-
-h1 {
-  font-family: 'Bree Serif', serif;
-}
-
-p {
-  margin-bottom: 1.25em;
-  flex-grow: 1;
-}
-
-.main-content {
-  margin: 2em auto;
-  padding-top: 50px;
-  min-height: 1000px;
-}
-
-.main {
-  background-color: #474B4F;
-  position: relative;
-  z-index: -1;
-}
-
-#mainHead {
-  padding: 0;
-  margin: 0;
-  color: white;
-  margin-top: 1rem;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-}
-
-.card h1 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-}
-
-.card-buttons a {
-  font-family: 'Roboto', sans-serif;
-}
-
-/* .fab,
-.fas {
-  transition: .5s;
-} */
-
-.card {
-  padding: 1.5em 1em;
-  border: 1px solid #6B6E70;
-  border-radius: 0.5em;
-}
-
-.card h1 {
-  color: white; 
-  line-height: 1.25;
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-
-.btn {
-  font-size: 0.85em;
-  color: #fff;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 0.75em 1.5em;
-  background-color: #86C232;
-  border-radius: 0.35em;
-  display: inline-block;
-  width: 125px;
-  margin-top: 50px;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background-color: #61892F;
-  color: white !important;
-}
-
-.material-icons {
-  color: rgba(39, 141, 164, 0.8); 
-  font-size: 2.1em;
-}
-
-.icon {
-  text-decoration: none;
-}
-
-
-i {
-  text-align: center;
-  padding: 1px;
-  color: #86C232;
-}
-
-i:hover {
-  color: #61892F;
-  cursor: pointer;
-}
-
-.socialMedia a {
-  font-size: 40px;
-}
-
-.socialMedia a:hover {
-  color: #61892F;
-  cursor: pointer;
-}
-
-.fa-file{
-  font-size: 38px;
-}
-
-.socialMedia a{
-  font-size: 40px;
-  color: #86C232;
-}
 
 header {
   background-image: url("../Images/Nature.png");
@@ -391,41 +76,20 @@ header {
   animation-fill-mode: forwards;
 }
 
-
-.skills {
+.headSection {
   height: 100vh;
-  background-color: #222629;
-  /* background: linear-gradient(320deg, rgba(255,255,255,1) 0%, rgba(195,231,255,1) 10%, rgba(0,189,255,1) 100%); */
-  /* background-image: linear-gradient(#379683, #5CDB95); */
-}
-
-
-
-.progList {
-  list-style: none;
-  padding-left: 0;
-  display: inline-block;
-  margin-right: 25px;
-  font-family: 'Verdana', serif;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
 }
 
-.progList2 {
-  list-style: none;
-  padding-left: 0;
-  display: inline-block;
-  margin-left: 25px;
-  font-family: 'Verdana', serif;
-}
-
-h3 {
-  text-align: center;
-}
-
-h4 {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 5px;
+.headContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+  margin-top: auto;
 }
 
 .name {
@@ -451,36 +115,230 @@ h4 {
   animation-fill-mode: forwards;
 }
 
-.nav-item a {
+
+
+/* ===================================== 
+   About/Skills Page Styling/Layout
+======================================== */
+
+.about {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.aboutDiv {
+  color: white;
+}
+
+.prog {
+  margin: 0 auto;
+  justify-content: space-evenly;
+  color: #6B6E70;
+  display: flex;
+  margin-top: 10px;
+}
+
+.progList {
+  list-style: none;
+  padding-left: 0;
+  display: inline-block;
+  margin-right: 25px;
+  font-family: 'Verdana', serif;
+}
+
+.progList2 {
+  list-style: none;
+  padding-left: 0;
+  display: inline-block;
+  margin-left: 25px;
+  font-family: 'Verdana', serif;
+}
+
+.progList h4,
+.progList2 h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.progList li,
+.progList2 li {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+  background-color: #222629;
+}
+
+.skillsDiv {
+  margin-top: auto;
+}
+
+.skillTitle {
+  margin:  100px auto 0;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.myBio {
+  margin: 0 auto;
+  max-width: 500px;
+  max-height: 300px;
+  overflow-y: auto;
+  color: #6B6E70;
   font-family: 'Roboto', sans-serif;
 }
 
 
-img {
-  flex-grow: 1;
+
+
+/* ===================================== 
+   Projects Page Styling/Layout
+======================================== */
+
+.main-content {
+  width: 95%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px;
+  position: relative;
+  z-index: 0;
+  margin: 2em auto;
+  padding-top: 50px;
+  min-height: 1000px;
+}
+
+div.main-content {
+  padding-top: 0;
+}
+
+.main {
+  background-color: #474B4F;
+  position: relative;
+  z-index: -1;
+}
+
+#mainHead {
+  padding: 0;
+  margin: 0;
+  color: white;
+  margin-top: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.card {
+  display: flex; 
+  flex-direction: column;
+  background-color: #6B6E70;
+  padding: 1.5em 1em;
+  border: 1px solid #6B6E70;
+  border-radius: 0.5em;
+}
+
+.card h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: white; 
+  line-height: 1.25;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.card-buttons a {
+  font-family: 'Roboto', sans-serif;
+}
+
+.card-buttons {
+  justify-content: flex-end;
+}
+
+.btn {
+  font-size: 0.85em;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.75em 1.5em;
+  background-color: #86C232;
+  border-radius: 0.35em;
+  width: 125px;
+  margin-top: 50px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #61892F;
+  color: white !important;
+}
+
+i {
+  text-align: center;
+  padding: 1px;
+  color: #86C232;
+}
+
+i:hover {
+  color: #61892F;
+  cursor: pointer;
 }
 
 .toDoList,
-.toDoList2,
-.toDoList3,
-.toDoList4,
 .recipeImg {
   height: 300px;
   border-radius: 0.5em;
 }
 
 .toDoList:hover,
-.toDoList2:hover,
-.toDoList3:hover,
-.toDoList4:hover,
 .recipeImg:hover {
   cursor: pointer;
   border-radius: 0.5em;
   box-shadow: 7px 10px 20px rgba(0,0,0,.9);
 }
 
-.closeNav {
-  display: none;
+
+
+
+
+/* ======================================================== 
+   Social Media, Resume, and Email Icons and Text Styling
+=========================================================== */
+
+.socialMedia {
+  animation-fill-mode: forwards;
+  padding-top: 10px;
+}
+.socialMedia a {
+  font-size: 40px;
+  color: #86C232;
+}
+
+.socialMedia a:hover {
+  color: #61892F;
+  cursor: pointer;
+}
+
+.socialMedia a span {
+  font-family: 'Roboto', sans-serif;
+}
+
+.resume,
+.email,
+.github,
+.linkedin {
+  font-size: 10px;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  display: block;
 }
 
 #GH {
@@ -500,34 +358,12 @@ img {
 }
 
 
+
+
+
 /* ===================================== 
    Modal's
 ======================================== */
-
-.bg-modal {
-  background-color: rgba(0, 0, 0, 0.8);
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-contents {
-  height: 620px;
-  width: 750px;
-  background-color: rgb(255, 255, 255);
-  text-align: center;
-  padding: 20px;
-  position: relative;
-  border-radius: 4px;
-  /*display: flex;*/
-  /*margin: 0 auto;*/
-  animation: 1s bouncing;
-  animation-fill-mode: forwards;
-}
 
 .modal-title {
   font-family: 'Roboto', serif;
@@ -544,40 +380,30 @@ img {
   padding-right: 5px !important;
 }
 
-.close i{
-  position: absolute;
-  top: 0;
-  right: 5px;
-  font-size: 25px;
-  color: #86C232;
-  cursor: pointer;
-  margin-bottom: 1000px;
-}
-
-.close i:hover {
-  color: #61892F;
-}
-
 .toDoListModal {
-  width: 450px;
+  width: 100%;
   border-radius: 0.5em;
   display: block;
   margin: 0 auto;
   border: 1px solid black;
 }
 
-.modalP {
-  padding-top: 10px;
-  justify-content: center;
-  align-items: center;
-  margin: auto 0;
-  font-family: 'Raleway', sans-serif;
-  color: white;
+.recipeModal {
+  width: 100%;
+  height: 350px;
+  border-radius: 0.5em;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid black;
 }
 
-.none {
-  display: none;
-}
+
+
+
+
+/* ===================================== 
+   Navbar
+======================================== */
 
 .navbar {
   /* background: transparent !important; */
@@ -593,7 +419,6 @@ img {
 
 .navbar a:hover {
   cursor: pointer;
-  /* text-decoration: underline; */
   border-bottom: 3px solid rgba(255, 255, 255, 0.5);
   color: rgba(255, 255, 255, 0.5);
   transition: 0.25s;
@@ -601,70 +426,37 @@ img {
   padding-bottom: 5px;
 }
 
-
-.bg-modal2 {
-  background-color: rgba(0, 0, 0, 0.8);
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  display: none;
-  justify-content: center;
-  align-items: center;
+.nav-item a {
+  font-family: 'Roboto', sans-serif;
 }
 
-.modal-contents2 {
-  height: 620px;
-  width: 750px;
-  background-color: #6B6E70;
-  text-align: center;
-  padding: 20px;
-  position: relative;
-  border-radius: 4px;
-  /*display: flex;*/
-  /*margin: 0 auto;*/
-  animation: 1s bouncing;
-  animation-fill-mode: forwards;
+.navbar a.activeLink {
+  color: white !important;
+  font-weight: bold;
+  border-bottom: 5px solid white;
+  transition: 0.25s;
+  padding: 0;
+  padding-bottom: 5px;
 }
 
-p {
-  margin-bottom: 0;
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.recipeModal {
-  width: 450px;
-  height: 350px;
-  border-radius: 0.5em;
-  display: block;
-  margin: 0 auto;
-  border: 1px solid black;
+.navbar-light .navbar-toggler {
+  border-color: white;
 }
 
-.modalP2 {
-  padding-top: 10px;
-  justify-content: center;
-  align-items: center;
-  margin: auto 0;
-  font-family: 'Raleway', sans-serif;
-  color: white;
+.navbar-light .navbar-toggler:focus {
+  border-color: white;
 }
 
-.close2 i{
-  position: absolute;
-  top: 0;
-  right: 5px;
-  font-size: 25px;
-  color: #86C232;
-  cursor: pointer;
-  margin-bottom: 1000px;
-}
 
-.close2 i:hover {
-  color: #61892F;
-}
+
+
 
 /* ===================================== 
-   etc
+   Scroll Down/Up Arrows
 ======================================== */
 
 .scrollDown,
@@ -699,81 +491,33 @@ p {
   margin-bottom: 3px;
 }
 
-.vertical-menu a {
-  background-color: transparent; 
-  display: block;
-  padding: 12px;
+.section1 {
+  font-size: 75px;
+  animation: 2.5s fadeIn;
+  animation-fill-mode: forwards;
+  margin-top: auto;
 }
 
-.vertical-menu a:hover {
-  cursor: pointer;
-  text-decoration: underline;
-  color: rgba(255, 255, 255, 0.5);
-  transition: 0.5s;
+.section2 {
+  font-size: 75px;
+  margin-top: auto;
+  margin-bottom: 45px;
+  animation: 2.5s fadeIn;
+  animation-fill-mode: forwards;
 }
 
-.vertical-menu {
-  position: fixed;
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-  justify-content: space-evenly;
-  color: #6B6E70;
-  letter-spacing: 0.15em;
-  font-family: 'Roboto', serif;
-  animation: 2.5s slideUp2;
+.backTo1 {
+  font-size: 75px;
+  position: relative;
+  animation: 2.5s fadeIn;
+  animation-fill-mode: forwards;
 }
 
-.vertical {
-  height: 200px;
-  justify-content: center;
-  display: flex;
-}
 
-hr {
-  border-color: rgba(255, 255, 255, 0.5);
-  padding-top: 0;
-  margin-top: 0;
-  clear: left;
-}
 
-.navbar a.activeLink {
-  color: white !important;
-  font-weight: bold;
-  /* text-decoration: underline; */
-  border-bottom: 5px solid white;
-  transition: 0.25s;
-  padding: 0;
-  padding-bottom: 5px;
-}
 
-.navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
 
-.navbar-light .navbar-toggler {
-  border-color: white;
-}
 
-.navbar-light .navbar-toggler:focus {
-  border-color: white;
-}
-
-h6 {
-  padding: 0;
-  margin: 0;
-}
-
-.resume,
-.email,
-.github,
-.linkedin {
-  font-size: 10px;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  display: block;
-}
 
 
 
@@ -816,110 +560,19 @@ h6 {
       overflow: hidden;
     }
 
-    .bg-modal {
-      background-color: rgba(0, 0, 0, 0.8);
-      width: 100%;
-      height: 100%;
-      position: fixed;
-      top: 0;
-      display: none;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .modal-contents {
-      height: 400px;
-      width: 300px;
-      background-color: #6B6E70;
-      text-align: center;
-      padding: 20px;
-      position: relative;
-      border-radius: 4px;
-    }
-
-    .close i{
-      position: absolute;
-      top: 0;
-      right: 5px;
-      font-size: 25px;
-      color: #86C232;
-      cursor: pointer;
-      margin-bottom: 1000px;
-    }
-
-    .close i:hover {
-      color: grey;
-    }
-
     .toDoListModal {
-      width: 250px;
+      width: 100%;
       border-radius: 0.5em;
       display: block;
       margin: 0 auto;
     }
 
-    .modalP {
-      padding-top: 10px;
-      justify-content: center;
-      align-items: center;
-      margin: auto 0;
-      font-family: 'Raleway', sans-serif;
-    }
-
-    
-
-    .vertical-menu {
-      opacity: 0;
-      width: 0;
-      transition: all 1s ease;
-      /* left: -200px; */
-      z-index: 2;
-    }
-  
-    .vertical-menu.open {
-      opacity: 1;
-      width: 200px;
-      transition: all 1s ease;
-      /* left: 0px; */
-    }
-  
-    #nav1,
-    #nav2,
-    #nav3 {
-      display: none;
-    }
-  
-    #nav1.open,
-    #nav2.open,
-    #nav3.open {
-      display: block;
-    }
-    
-  
-    .vertical-menu a {
-      padding: 0;
-      margin: 0;
-      border-bottom: 1px solid #474B4F;
-      width: 100%;
-    }
-
-
-    .vertical {
-      display: none;
-    }
-
-    .nav-menu {
-      display: block;
-      top: 5px;
-    }
-
-    
-
+   
 
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .section1 {
+    .section1 {
       display: none;
     }
 
@@ -959,160 +612,36 @@ h6 {
       overflow: hidden;
     }
 
-    .bg-modal {
-      background-color: rgba(0, 0, 0, 0.8);
-      width: 100%;
-      height: 100%;
-      position: fixed;
-      top: 0;
-      display: none;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .modal-contents {
-      height: 600px;
-      width: 700px;
-      background-color: #6B6E70;
-      text-align: center;
-      padding: 20px;
-      position: relative;
-      border-radius: 4px;
-    }
-
-    .close i{
-      position: absolute;
-      top: 0;
-      right: 5px;
-      font-size: 25px;
-      color: #86C232;
-      cursor: pointer;
-      margin-bottom: 1000px;
-    }
-
-    .close i:hover {
-      color: grey;
-    }
-
     .toDoListModal {
-      width: 650px;
+      width: 100%;
       border-radius: 0.5em;
       display: block;
       margin: 0 auto;
     }
 
-    .modalP {
-      padding-top: 10px;
-      justify-content: center;
-      align-items: center;
-      margin: auto 0;
-      font-family: 'Raleway', sans-serif;
-    }
-
     .none {
       display: none;
     }
-
-    .vertical-menu {
-      opacity: 0;
-      width: 0;
-      transition: all 1s ease;
-      /* left: -200px; */
-    }
-  
-    .vertical-menu.open {
-      opacity: 1;
-      width: 200px;
-      transition: all 1s ease;
-      /* left: 0px; */
-    }
-  
-    #nav1,
-    #nav2,
-    #nav3 {
-      display: none;
-    }
-  
-    #nav1.open,
-    #nav2.open,
-    #nav3.open {
-      display: block;
-    }
-    
-  
-    .vertical-menu a {
-      padding: 0;
-      margin: 0;
-      border-bottom: 1px solid #474B4F;
-      width: 100%;
-    }
-
-    .vertical {
-      display: none;
-    }
-
-    .nav-menu {
-      display: block;
-      top: 5px;
-    }
-
-    
-
     
 }
 
 @media (max-width: 800px) and (orientation: landscape) {
-  .skillsDiv {
-    height: 350px;
-  }
-  
-  .skillTitle {
-    margin-top: 0;
-  }
-
-  .myBio {
-    line-height: 95%;
-    overflow: hidden;
-  }
-
-  .about {
-    margin-bottom: 2px;
-    margin-top: auto;
-  }
-
-  .bg-modal {
-      background-color: rgba(0, 0, 0, 0.8);
-      width: 100%;
-      height: 100%;
-      position: fixed;
-      top: 0;
-      display: none;
-      justify-content: center;
-      align-items: center;
+    .skillsDiv {
+      height: 350px;
+    }
+    
+    .skillTitle {
+      margin-top: 0;
     }
 
-    .modal-contents {
-      height: 300px;
-      width: 400px;
-      background-color: #6B6E70;
-      text-align: center;
-      padding: 20px;
-      position: relative;
-      border-radius: 4px;
+    .myBio {
+      line-height: 95%;
+      overflow: hidden;
     }
 
-    .close i{
-      position: absolute;
-      top: 0;
-      right: 5px;
-      font-size: 25px;
-      color: #86C232;
-      cursor: pointer;
-      margin-bottom: 1000px;
-    }
-
-    .close i:hover {
-      color: grey;
+    .about {
+      margin-bottom: 2px;
+      margin-top: auto;
     }
 
     .toDoListModal {
@@ -1122,133 +651,24 @@ h6 {
       margin: 0 auto;
     }
 
-    .modalP {
-      padding-top: 5px;
-      justify-content: center;
-      align-items: center;
-      margin: auto 0;
-      font-family: 'Raleway', sans-serif;
-      line-height: 90%;
-      font-size: 10px;
-    }
-
     .none {
       display: none;
     }
-    
-    .vertical-menu {
-      opacity: 0;
-      width: 0;
-      transition: all 1s ease;
-      /* left: -200px; */
-    }
-  
-    .vertical-menu.open {
-      opacity: 1;
-      width: 200px;
-      transition: all 1s ease;
-      /* left: 0px; */
-    }
-  
-    #nav1,
-    #nav2,
-    #nav3 {
-      display: none;
-    }
-  
-    #nav1.open,
-    #nav2.open,
-    #nav3.open {
-      display: block;
-    }
-    
-  
-    .vertical-menu a {
-      padding: 0;
-      margin: 0;
-      border-bottom: 1px solid #474B4F;
-      width: 100%;
-    }
-
-    .vertical {
-      display: none;
-    }
-
-    .nav-menu {
-      display: block;
-      top: 5px;
-    }
-
-  
   }
 
 
 @media screen and (max-width: 1200px) { 
 
-  .vertical-menu {
-    opacity: 0;
-    width: 0;
-    transition: all 1s ease;
-
-  }
-
-  .vertical-menu.open {
-    opacity: 1;
-    width: 200px;
-    transition: all 1s ease;
-  }
-
-
-  #nav1,
-  #nav2,
-  #nav3 {
-    display: none;
-  }
-
-  #nav1.open,
-  #nav2.open,
-  #nav3.open {
-    display: block;
-  }
-  
-
-  .vertical-menu a {
-    padding: 0;
-    margin: 0;
-    border-bottom: 1px solid #474B4F;
-    width: 100%;
-  }
-
-  .vertical {
-    display: none;
-  }
-
-  .nav-menu {
-    display: block;
-    top: 5px;
-  }
-
-  .closeNav {
-    position: absolute;
-    top: 0;
-    right: 5px;
-    font-size: 25px;
-    color: #86C232;
-    cursor: pointer;
-    display: block;
-  }
-
-  #nav1,
-  #nav2,
-  #nav3 {
-    width: 50%;
-    padding-bottom: 10px;
-  }
-
   header {
     background-image: url("../Images/NatureMobile.png");
   }
+
+  .navbar a.activeLink {
+    border: none;
+  }
 }
+
+
 
 
 
@@ -1264,37 +684,6 @@ h6 {
     visibility: visible;
     opacity: 1;
   }
-}
-
-@keyframes fadeInSpin {
-  0% {
-    opacity: 0;
-    transform: rotateX(180deg) rotateY(180deg);
-  }
-  100% {
-    visibility: visible;
-    opacity: 1;
-    transform: rotateX(0deg) rotateY(0deg);
-  }
-}
-
-
-@keyframes spin {
-  0% {
-    transform: rotateY(180deg);
-  }
-  100% {
-    transform: rotateY(0deg);
-  }
-}
-
-@keyframes bouncing {
-    0%, 100% { 
-        top: 0;
-    }
-     50% {
-        top: 25px;
-    }
 }
 
 @keyframes slideInRight {

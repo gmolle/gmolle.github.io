@@ -15,18 +15,9 @@ const projectHeader = document.querySelector('.projectHeader');
 const scrollDown = document.querySelector('.scrollDown');
 const scrollDown2 = document.querySelector('.scrollDown2');
 const scrollUp = document.querySelector('.scrollUp');
-
-const nav1 = document.querySelector('.nav1');
-const nav2 = document.querySelector('.nav2');
-const nav3 = document.querySelector('.nav3');
 //////////////////////////////////////////
 
 // Functions
-
-nav2.addEventListener('click', () => {
-	nav2.classList.toggle('active');
-	nav1.classList.remove('active');
-})
 
 //////////////////////////////////////////
 
@@ -120,8 +111,7 @@ recipe.addEventListener('mouseout', () => {
 //////////////////////////////////////////
 
 
-
-// Side nav bar color changes on scroll
+// Navbar color changes on scroll/click
 $(window).scroll(function () {
 	var scrollPos = $(window).scrollTop(),
 		navH = $('.navbar').height();
@@ -133,7 +123,6 @@ $(window).scroll(function () {
 		}
 	})
 });
-
 
 
 //////////////////////////////////////////
