@@ -18,6 +18,11 @@ const scrollUp = document.querySelector('.scrollUp');
 
 const name = document.querySelector('.name');
 const bio = document.querySelector('.bio');
+
+const github = document.querySelector('#GH');
+const linkedin = document.querySelector('#LI');
+const email = document.querySelector('#EM');
+const resume = document.querySelector('#RE');
 //////////////////////////////////////////
 
 // Functions
@@ -26,12 +31,28 @@ const bio = document.querySelector('.bio');
 
 // Event Listeners //
 
+github.addEventListener('animationend', () => {
+	github.style.visibility = 'visible';
+});
+
+linkedin.addEventListener('animationend', () => {
+	linkedin.style.visibility = 'visible';
+});
+
+email.addEventListener('animationend', () => {
+	email.style.visibility = 'visible';
+});
+
+resume.addEventListener('animationend', () => {
+	resume.style.visibility = 'visible';
+});
+
+
 name.addEventListener('animationend', () => {
 	name.style.visibility = 'visible';
 	setTimeout(() => {
 		name.style.border = 'none';
 	}, 350);
-
 });
 
 bio.addEventListener('animationend', () => {

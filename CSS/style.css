@@ -363,20 +363,30 @@ i:hover {
   display: block;
 }
 
+#GH,
+#LI,
+#RE,
+#EM {
+  visibility: hidden;
+}
+
 #GH {
   animation: 2.5s slideInLeft;
+  animation-delay: 2.25s;
 }
 
 #LI {
-  animation: 2.5s slideDown;
+  animation: 2.5s slideInLeft;
 }
 
 #RE {
-  animation: 2.5s slideUp;
+  animation: 2.5s slideInRight;
+  animation-delay: 1.25s;
 }
 
 #EM {
   animation: 2.5s slideInRight;
+  animation-delay: 3.25s;
 }
 
 
@@ -794,12 +804,14 @@ i:hover {
 
 @keyframes slideInRight {
   0% { 
+    visibility: hidden;
     transform: translateX(1000px) rotateY(360deg);
   }
   80% {
     transform: translateX(-5px);
   }
    100% {
+     visibility: visible;
     transform: translateX(0px) rotateY(0deg);
   }
 }
@@ -818,12 +830,14 @@ i:hover {
 
 @keyframes slideInLeft {
   0% { 
+    visibility: hidden;
     transform: translateX(-1000px) rotateY(360deg);
   }
   80% {
     transform: translateX(5px);
   }
    100% {
+     visibility: visible;
     transform: translateX(0px) rotateY(0deg);
   }
 }
