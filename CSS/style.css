@@ -94,16 +94,24 @@ header {
 
 .name {
   display: block;
+  visibility: hidden;
   margin: 0px;
   color: white;
   align-self: center;
   font-family: 'Roboto', serif;
   text-align: center;
   letter-spacing: 2px;
-  animation: 2.5s slideInRight;
-  animation-fill-mode: forwards;
   font-weight: 500;
+  overflow: hidden; 
+  border-right: .15em solid #86C232;
+  white-space: nowrap; 
+  margin: 0 auto; 
+  animation: 
+    typing 3s steps(30, end),
+    blink .5s step-end infinite;
+  animation-delay: 2s;
 }
+
 
 .bio {
   padding: 0;
@@ -111,8 +119,16 @@ header {
   font-family: 'Roboto', serif;
   color: #6B6E70;;
   letter-spacing: 2px;
-  animation: 2.5s slideInLeft;
-  animation-fill-mode: forwards;
+  visibility: hidden;
+  overflow: hidden; 
+  border-right: .15em solid #86C232;
+  white-space: nowrap; 
+  margin: 0 auto; 
+  animation: 
+    typing 3.5s steps(30, end),
+    blink .5s step-end infinite;
+  animation-delay: 5.5s;
+  padding-right: 5px;
 }
 
 
@@ -127,6 +143,11 @@ header {
 
 .aboutDiv {
   color: white;
+}
+
+.list-group-item {
+  background: #222629;
+  font-family: 'Roboto', sans-serif;
 }
 
 .prog {
@@ -426,6 +447,12 @@ i:hover {
   border-radius: 0.5em;
 }
 
+.recipeCaption {
+  background: rgba(0,0,0,.5);
+  color: white !important;
+  border-radius: 0.5em;
+}
+
 
 /* ===================================== 
    Navbar
@@ -556,6 +583,8 @@ i:hover {
   border-bottom-color: #474B4F;
   border-top-color: #474B4F;
 }
+
+
 
 
 
@@ -735,6 +764,24 @@ i:hover {
    Animations
 ======================================== */
 
+/* The typing effect */
+@keyframes typing {
+  0% {
+   width: 0;
+   visibility: hidden;
+  }
+  100% {
+   width: 100%;
+   visibility: visible;
+  }
+ }
+ 
+ /* The typewriter cursor effect */
+ @keyframes blink{
+   from, to { border-color: transparent }
+   50% { border-color: #86C232 }
+ }
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -754,6 +801,18 @@ i:hover {
   }
    100% {
     transform: translateX(0px) rotateY(0deg);
+  }
+}
+
+@keyframes slideInRight2 {
+  0% { 
+    transform: translateX(1000px);
+  }
+  80% {
+    transform: translateX(-5px);
+  }
+   100% {
+    transform: translateX(0px);
   }
 }
 

@@ -15,6 +15,9 @@ const projectHeader = document.querySelector('.projectHeader');
 const scrollDown = document.querySelector('.scrollDown');
 const scrollDown2 = document.querySelector('.scrollDown2');
 const scrollUp = document.querySelector('.scrollUp');
+
+const name = document.querySelector('.name');
+const bio = document.querySelector('.bio');
 //////////////////////////////////////////
 
 // Functions
@@ -23,10 +26,19 @@ const scrollUp = document.querySelector('.scrollUp');
 
 // Event Listeners //
 
+name.addEventListener('animationend', () => {
+	name.style.visibility = 'visible';
+	setTimeout(() => {
+		name.style.border = 'none';
+	}, 350);
+
+});
+
+bio.addEventListener('animationend', () => {
+	bio.style.visibility = 'visible';
+});
+
 // Scroll Button Events
-// button1.addEventListener('click', () => {
-// 	skills.scrollIntoView(true);
-// });
 
 button1.addEventListener('mouseover', () => {
 	button1.style.display = 'none';
