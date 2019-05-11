@@ -116,7 +116,6 @@ header {
 }
 
 
-
 /* ===================================== 
    About/Skills Page Styling/Layout
 ======================================== */
@@ -328,6 +327,8 @@ i:hover {
 
 .socialMedia a span {
   font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  display: none;
 }
 
 .resume,
@@ -372,6 +373,7 @@ i:hover {
 
 .modal-body p {
   font-family: 'Roboto', serif;
+  margin: auto 0;
 }
 
 .close {
@@ -397,8 +399,32 @@ i:hover {
   border: 1px solid black;
 }
 
+.carousel-caption h5,
+.carousel-caption p{
+  color: black;
+  font-family: 'Roboto', serif;
+  font-weight: 400;
+}
 
+.carousel-caption h5 {
+  font-size: 15px;
+}
 
+.carousel-caption p {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-indicators {
+  filter: invert(100%);
+}
+
+.carousel-item img {
+  height: 350px;
+  border-radius: 0.5em;
+}
 
 
 /* ===================================== 
@@ -406,7 +432,6 @@ i:hover {
 ======================================== */
 
 .navbar {
-  /* background: transparent !important; */
   animation: 2.5s slideInLeft2;
   background-color: rgba(255, 255, 255,) !important;
 }
@@ -423,7 +448,11 @@ i:hover {
   color: rgba(255, 255, 255, 0.5);
   transition: 0.25s;
   padding: 0;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+}
+
+.navbar-toggler {
+  animation: 2s slideInLeft2;
 }
 
 .nav-item a {
@@ -513,10 +542,20 @@ i:hover {
   animation-fill-mode: forwards;
 }
 
+/* ===================================== 
+   Tooltips
+======================================== */
 
+.tooltip .tooltip-inner {
+  background-color: #474B4F;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
 
-
-
+.tooltip .arrow::before {
+  border-bottom-color: #474B4F;
+  border-top-color: #474B4F;
+}
 
 
 
@@ -654,6 +693,7 @@ i:hover {
     .none {
       display: none;
     }
+    
   }
 
 
@@ -666,9 +706,28 @@ i:hover {
   .navbar a.activeLink {
     border: none;
   }
+
+  .socialMedia a span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    display: block;
+  }
+  
+  .resume,
+  .email,
+  .github,
+  .linkedin {
+    font-size: 10px;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+  .tooltip {
+    display: none !important;
+  }
 }
-
-
 
 
 

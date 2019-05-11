@@ -24,17 +24,9 @@ const scrollUp = document.querySelector('.scrollUp');
 // Event Listeners //
 
 // Scroll Button Events
-button1.addEventListener('click', () => {
-	skills.scrollIntoView(true);
-});
-
-button2.addEventListener('click', () => {
-	skills.scrollIntoView(true);
-});
-
-button3.addEventListener('click', () => {
-	window.scrollTo(0, 0);
-});
+// button1.addEventListener('click', () => {
+// 	skills.scrollIntoView(true);
+// });
 
 button1.addEventListener('mouseover', () => {
 	button1.style.display = 'none';
