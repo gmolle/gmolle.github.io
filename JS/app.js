@@ -1,4 +1,4 @@
-// constiables
+// Variables
 const button1 = document.querySelector('.section1');
 const button2 = document.querySelector('.section2');
 const button3 = document.querySelector('.backTo1');
