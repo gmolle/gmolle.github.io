@@ -23,6 +23,10 @@ const github = document.querySelector('#GH');
 const linkedin = document.querySelector('#LI');
 const email = document.querySelector('#EM');
 const resume = document.querySelector('#RE');
+
+const body = document.querySelector('body');
+
+const nav = document.querySelector('.navbar');
 //////////////////////////////////////////
 
 // Functions
@@ -47,7 +51,6 @@ resume.addEventListener('animationend', () => {
 	resume.style.visibility = 'visible';
 });
 
-
 name.addEventListener('animationend', () => {
 	name.style.visibility = 'visible';
 	setTimeout(() => {
@@ -57,6 +60,15 @@ name.addEventListener('animationend', () => {
 
 bio.addEventListener('animationend', () => {
 	bio.style.visibility = 'visible';
+	body.style.position = 'relative';
+});
+
+button1.addEventListener('animationend', () => {
+	button1.style.visibility = 'visible';
+});
+
+nav.addEventListener('animationend', () => {
+	nav.style.visibility = 'visible';
 });
 
 // Scroll Button Events
