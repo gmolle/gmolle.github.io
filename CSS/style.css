@@ -227,7 +227,7 @@ header {
   width: 95%;
   max-width: 1000px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
   position: relative;
   z-index: 0;
@@ -474,7 +474,7 @@ i:hover {
 ======================================== */
 
 .navbar {
-  animation: 2.5s slideInLeft2;
+  animation: 2.5s fadeIn;
   background-color: rgba(255, 255, 255,) !important;
   animation-delay: 9s;
   visibility: hidden;
@@ -484,6 +484,8 @@ i:hover {
   color: #6B6E70 !important;
   transition: 0.25s;
   z-index: 5;
+  animation: 2.5s slideInLeft2;
+  animation-delay: 9s;
 }
 
 .navbar a:hover {

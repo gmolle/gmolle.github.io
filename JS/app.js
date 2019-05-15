@@ -35,112 +35,114 @@ const nav = document.querySelector('.navbar');
 
 // Event Listeners //
 
+// Events to keep elements visible after CSS animations end
+
 github.addEventListener('animationend', () => {
-	github.style.visibility = 'visible';
+  github.style.visibility = 'visible';
 });
 
 linkedin.addEventListener('animationend', () => {
-	linkedin.style.visibility = 'visible';
+  linkedin.style.visibility = 'visible';
 });
 
 email.addEventListener('animationend', () => {
-	email.style.visibility = 'visible';
+  email.style.visibility = 'visible';
 });
 
 resume.addEventListener('animationend', () => {
-	resume.style.visibility = 'visible';
+  resume.style.visibility = 'visible';
 });
 
 name.addEventListener('animationend', () => {
-	name.style.visibility = 'visible';
-	setTimeout(() => {
-		name.style.border = 'none';
-	}, 350);
+  name.style.visibility = 'visible';
+  setTimeout(() => {
+    name.style.border = 'none';
+  }, 350);
 });
 
 bio.addEventListener('animationend', () => {
-	bio.style.visibility = 'visible';
-	body.style.position = 'relative';
+  bio.style.visibility = 'visible';
+  body.style.position = 'relative';
 });
 
 button1.addEventListener('animationend', () => {
-	button1.style.visibility = 'visible';
+  button1.style.visibility = 'visible';
 });
 
 nav.addEventListener('animationend', () => {
-	nav.style.visibility = 'visible';
+  nav.style.visibility = 'visible';
 });
 
 // Scroll Button Events
 
 button1.addEventListener('mouseover', () => {
-	button1.style.display = 'none';
-	scrollDown.style.display = 'block';
+  button1.style.display = 'none';
+  scrollDown.style.display = 'block';
 });
 
 button2.addEventListener('mouseover', () => {
-	button2.style.display = 'none';
-	scrollDown2.style.display = 'block';
+  button2.style.display = 'none';
+  scrollDown2.style.display = 'block';
 });
 
 button3.addEventListener('mouseover', () => {
-	button3.style.display = 'none';
-	scrollUp.style.display = 'inline-block';
+  button3.style.display = 'none';
+  scrollUp.style.display = 'inline-block';
 });
 
 scrollDown.addEventListener('mouseout', () => {
-	button1.style.display = 'block';
-	scrollDown.style.display = 'none';
+  button1.style.display = 'block';
+  scrollDown.style.display = 'none';
 });
 
 scrollDown.addEventListener('click', () => {
-	skills.scrollIntoView(true);
+  skills.scrollIntoView(true);
 });
 
 scrollDown2.addEventListener('mouseout', () => {
-	button2.style.display = 'block';
-	scrollDown2.style.display = 'none';
+  button2.style.display = 'block';
+  scrollDown2.style.display = 'none';
 });
 
 scrollDown2.addEventListener('click', () => {
-	projectHeader.scrollIntoView(true);
+  projectHeader.scrollIntoView(true);
 });
 
 scrollUp.addEventListener('mouseout', () => {
-	button3.style.display = 'inline-block';
-	scrollUp.style.display = 'none';
+  button3.style.display = 'inline-block';
+  scrollUp.style.display = 'none';
 });
 
 scrollUp.addEventListener('click', () => {
-	window.scrollTo(0, 0);
+  window.scrollTo(0, 0);
 });
 
 //////////////////////////////////////////
 
 
-// Project zoom on hover animations
+// Projects zoom on hover animations
 for (let i = 0; i < projects.length; i++) {
-	projects[i].addEventListener('mouseover', () => {
-		projects[i].style.transform = 'scale(1.02)';
-		projects[i].style.transition = '.5s';
-	});
+  projects[i].addEventListener('mouseover', () => {
+    projects[i].style.transform = 'scale(1.02)';
+    projects[i].style.transition = '.5s';
+  });
 }
 
 for (let i = 0; i < projects.length; i++) {
-	projects[i].addEventListener('mouseout', () => {
-		projects[i].style.transform = 'scale(1)';
-		projects[i].style.transition = '.5s';
-	});
+  projects[i].addEventListener('mouseout', () => {
+    projects[i].style.transform = 'scale(1)';
+    projects[i].style.transition = '.5s';
+  });
 }
 
 recipe.addEventListener('mouseover', () => {
-	recipe.style.transform = 'scale(1.02)';
-	recipe.style.transition = '.5s';
+  recipe.style.transform = 'scale(1.02)';
+  recipe.style.transition = '.5s';
 });
 
 recipe.addEventListener('mouseout', () => {
-	recipe.style.transform = 'scale(1)';
-	recipe.style.transition = '.5s';
+  recipe.style.transform = 'scale(1)';
+  recipe.style.transition = '.5s';
 });
 
 
@@ -150,15 +152,15 @@ recipe.addEventListener('mouseout', () => {
 
 // Navbar color changes on scroll/click
 $(window).scroll(function () {
-	var scrollPos = $(window).scrollTop(),
-		navH = $('.navbar').height();
-	$('.sections').each(function (i) {
-		var offT = $(this).offset().top;
-		if ((offT - scrollPos - navH) <= 0) {
-			$('.activeLink').removeClass('activeLink')
-			$('.navbar a').eq(i).addClass('activeLink')
-		}
-	})
+  var scrollPos = $(window).scrollTop(),
+    navH = $('.navbar').height();
+  $('.sections').each(function (i) {
+    var offT = $(this).offset().top;
+    if ((offT - scrollPos - navH) <= 0) {
+      $('.activeLink').removeClass('activeLink')
+      $('.navbar a').eq(i).addClass('activeLink')
+    }
+  })
 });
 
 
