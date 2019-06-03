@@ -105,7 +105,7 @@ header {
   white-space: nowrap; 
   margin: 0 auto; 
   animation: 
-    typing 3s steps(30, end),
+    typing 2s steps(20, end),
     blink .5s step-end infinite;
   animation-delay: 2s;
 }
@@ -124,9 +124,9 @@ header {
   white-space: nowrap; 
   margin: 0 auto; 
   animation: 
-    typing 3.5s steps(30, end),
+    typing 2.5s steps(25, end),
     blink .5s step-end infinite;
-  animation-delay: 5.5s;
+  animation-delay: 4.5s;
   padding-right: 5px;
 }
 
@@ -315,6 +315,7 @@ i:hover {
 .recipeImg {
   height: 300px;
   border-radius: 0.5em;
+  
 }
 
 .toDoList:hover,
@@ -322,8 +323,8 @@ i:hover {
   cursor: pointer;
   border-radius: 0.5em;
   box-shadow: 7px 10px 20px rgba(0,0,0,.9);
+  transform: rotate(25deg); 
 }
-
 
 
 
@@ -342,7 +343,7 @@ i:hover {
 }
 
 .socialMedia a:hover {
-  color: #61892F;
+  color: rgb(112, 161, 42);
   cursor: pointer;
 }
 
@@ -475,8 +476,8 @@ i:hover {
 
 .navbar {
   animation: 2.5s fadeIn;
-  background-color: rgba(255, 255, 255,) !important;
-  animation-delay: 9s;
+  /* background-color: rgba(255, 255, 255,) !important; */
+  animation-delay: 7s;
   visibility: hidden;
 }
 
@@ -485,7 +486,8 @@ i:hover {
   transition: 0.25s;
   z-index: 5;
   animation: 2.5s slideInLeft2;
-  animation-delay: 9s;
+  animation-delay: 7s;
+  letter-spacing: 0.1rem;
 }
 
 .navbar a:hover {
@@ -570,7 +572,7 @@ i:hover {
 .section1 {
   font-size: 75px;
   animation: 2.5s fadeIn;
-  animation-delay: 9s;
+  animation-delay: 7s;
   animation-fill-mode: forwards;
   margin-top: auto;
   visibility: hidden;
